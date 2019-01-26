@@ -3,7 +3,20 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>mechanics</name>
     <events>
-        <event-group description="" sid="516682566191732" title="LIGHT" />
+        <event-group description="" sid="513522161938819" title="walls">
+            <sub-events>
+                <event-block sid="451997336608313">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="513021785150362" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="440523765993196" type="Wall_invis">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
         <event-group description="" sid="504193942367805" title="trampoline">
             <sub-events>
                 <event-block sid="516343873713779">
