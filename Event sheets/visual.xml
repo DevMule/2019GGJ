@@ -77,6 +77,28 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="913855107442143">
+                    <conditions>
+                        <condition behavior="Platform" id="3" name="Is jumping" sid="766429576200274" type="gulya" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="702659230355544" type="krolya">
+                            <param id="0" name="Animation">&quot;jump&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="705823137705438">
+                    <conditions>
+                        <condition behavior="Platform" id="4" name="Is falling" sid="535462365568432" type="gulya" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="787245154718571" type="krolya">
+                            <param id="0" name="Animation">&quot;fall&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block any="1" sid="569416992063255">
                     <conditions>
                         <condition id="2" name="Key is down" sid="697501067255963" type="Keyboard">

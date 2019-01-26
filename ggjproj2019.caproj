@@ -550,6 +550,45 @@
                         </collision-poly>
                     </frame>
                 </animation>
+                <animation framecount="1" loop="0" name="jump" pingpong="0" repeatcount="1" repeatto="0" sid="114343150218537" speed="5">
+                    <frame duration="1" hotspotX="0.540625" hotspotY="0.657812" original-source="C:\Users\Макс\Desktop\JAM\кроля анимация\jump.png">
+                        <collision-poly>
+                            <point x="0.314844" y="0.314844" />
+                            <point x="0.5" y="0.254687" />
+                            <point x="0.704687" y="0.295312" />
+                            <point x="0.760938" y="0.5" />
+                            <point x="0.682031" y="0.682031" />
+                            <point x="0.5" y="0.880469" />
+                            <point x="0.385938" y="0.614062" />
+                            <point x="0.176563" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="fall" pingpong="0" repeatcount="1" repeatto="0" sid="405798149742000" speed="10">
+                    <frame duration="1" hotspotX="0.53125" hotspotY="0.667188" original-source="C:\Users\Макс\Desktop\JAM\кроля анимация\fall (1).png">
+                        <collision-poly>
+                            <point x="0.359375" y="0.359375" />
+                            <point x="0.5" y="0.278906" />
+                            <point x="0.80625" y="0.19375" />
+                            <point x="0.696094" y="0.696094" />
+                            <point x="0.5" y="0.941406" />
+                            <point x="0.335156" y="0.664844" />
+                            <point x="0.294531" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.534375" hotspotY="0.670313" original-source="C:\Users\Макс\Desktop\JAM\кроля анимация\fall (2).png">
+                        <collision-poly>
+                            <point x="0.338281" y="0.338281" />
+                            <point x="0.5" y="0.282813" />
+                            <point x="0.772656" y="0.227344" />
+                            <point x="0.738281" y="0.5" />
+                            <point x="0.685938" y="0.685938" />
+                            <point x="0.5" y="0.936719" />
+                            <point x="0.332031" y="0.667969" />
+                            <point x="0.294531" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="Keyboard" sid="184064601483425">
