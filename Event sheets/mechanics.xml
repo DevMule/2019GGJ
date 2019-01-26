@@ -819,5 +819,20 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" sid="263424632240142" title="lihtnings">
+            <sub-events>
+                <event-block sid="756804535669994">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="319322222119397" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="241836727138225" type="light_player">
+                            <param id="0" name="Object">gulya</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

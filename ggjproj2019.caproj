@@ -402,6 +402,9 @@
                 <animation framecount="1" loop="0" name="box" pingpong="0" repeatcount="1" repeatto="0" sid="665169060070257" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
+                <animation framecount="1" loop="0" name="line" pingpong="0" repeatcount="1" repeatto="0" sid="451994761220427" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" />
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="Wall_invis" sid="949759953894430">
@@ -414,6 +417,14 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="380029031087182" speed="5">
                     <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="light_player" sid="354310836589235">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="775432376231692" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
