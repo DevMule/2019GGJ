@@ -20,6 +20,7 @@
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="LOS" version="1">Line Of Sight</behavior>
+        <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
         <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
@@ -259,12 +260,19 @@
         </object-type>
         <object-type name="enemy" sid="900564482945405">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="0 - rat, 1 - bat" name="enemy_type" sid="213535592840482" type="number" />
+                <instance-variable name="issleep" sid="501941747437731" type="boolean" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="723754338210301">
                     <behavior id="Platform" />
                 </behavior-type>
                 <behavior-type name="LineOfSight" sid="351855242112754">
                     <behavior id="LOS" />
+                </behavior-type>
+                <behavior-type name="Pathfinding" sid="615614133141781">
+                    <behavior id="Pathfinding" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -437,7 +445,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="krolya" sid="482387929997888">
+        <object-type name="effect_krolya" sid="482387929997888">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="1" name="stand" pingpong="0" repeatcount="1" repeatto="0" sid="833806778169013" speed="15">
@@ -593,6 +601,51 @@
         </object-type>
         <object-type name="Keyboard" sid="184064601483425">
             <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="effect_batmannn" sid="127766099200842">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="1" name="fly" pingpong="1" repeatcount="1" repeatto="0" sid="290587858502864" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Макс\Desktop\JAM\юэтмэн\летит2.png">
+                        <collision-poly>
+                            <point x="0.217187" y="0.217187" />
+                            <point x="0.5" y="0.0578125" />
+                            <point x="0.73125" y="0.26875" />
+                            <point x="0.908594" y="0.5" />
+                            <point x="0.736719" y="0.736719" />
+                            <point x="0.5" y="0.763281" />
+                            <point x="0.295312" y="0.704687" />
+                            <point x="0.03125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Макс\Desktop\JAM\юэтмэн\летит1.png">
+                        <collision-poly>
+                            <point x="0.217187" y="0.217187" />
+                            <point x="0.5" y="0.0578125" />
+                            <point x="0.922656" y="0.0773437" />
+                            <point x="0.9625" y="0.5" />
+                            <point x="0.685938" y="0.685938" />
+                            <point x="0.5" y="0.7625" />
+                            <point x="0.345313" y="0.654688" />
+                            <point x="0.0554687" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="sleep" pingpong="0" repeatcount="1" repeatto="0" sid="867958511798618" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Макс\Desktop\JAM\юэтмэн\спит.png">
+                        <collision-poly>
+                            <point x="0.380469" y="0.5" />
+                            <point x="0.379687" y="0.379687" />
+                            <point x="0.5" y="0.136719" />
+                            <point x="0.651563" y="0.348437" />
+                            <point x="0.655469" y="0.5" />
+                            <point x="0.638281" y="0.638281" />
+                            <point x="0.5" y="0.942969" />
+                            <point x="0.217187" y="0.782812" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />

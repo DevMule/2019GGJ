@@ -59,7 +59,7 @@
                                         <action behavior="Platform" id="7" name="Simulate control" sid="944750670491406" type="gulya">
                                             <param id="0" name="Control">0</param>
                                         </action>
-                                        <action id="7" name="Set mirrored" sid="429978505102715" type="krolya">
+                                        <action id="7" name="Set mirrored" sid="429978505102715" type="effect_krolya">
                                             <param id="0" name="State">0</param>
                                         </action>
                                     </actions>
@@ -75,7 +75,7 @@
                                         <action behavior="Platform" id="7" name="Simulate control" sid="467306077633762" type="gulya">
                                             <param id="0" name="Control">1</param>
                                         </action>
-                                        <action id="7" name="Set mirrored" sid="184087042916360" type="krolya">
+                                        <action id="7" name="Set mirrored" sid="184087042916360" type="effect_krolya">
                                             <param id="0" name="State">1</param>
                                         </action>
                                     </actions>

@@ -49,7 +49,7 @@
                         <condition id="-1" name="Every tick" sid="148485449992109" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-4" name="Set position to another object" sid="993864387875927" type="krolya">
+                        <action id="-4" name="Set position to another object" sid="993864387875927" type="effect_krolya">
                             <param id="0" name="Object">gulya</param>
                             <param id="1" name="Image point (optional)">0</param>
                         </action>
@@ -60,7 +60,7 @@
                         <condition behavior="Platform" id="0" name="Is moving" sid="972293177220386" type="gulya" />
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="955967774361161" type="krolya">
+                        <action id="4" name="Set animation" sid="955967774361161" type="effect_krolya">
                             <param id="0" name="Animation">&quot;run&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -71,7 +71,7 @@
                         <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="726160062116687" type="gulya" />
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="399242451378195" type="krolya">
+                        <action id="4" name="Set animation" sid="399242451378195" type="effect_krolya">
                             <param id="0" name="Animation">&quot;stand&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -82,7 +82,7 @@
                         <condition behavior="Platform" id="3" name="Is jumping" sid="766429576200274" type="gulya" />
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="702659230355544" type="krolya">
+                        <action id="4" name="Set animation" sid="702659230355544" type="effect_krolya">
                             <param id="0" name="Animation">&quot;jump&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -93,7 +93,7 @@
                         <condition behavior="Platform" id="4" name="Is falling" sid="535462365568432" type="gulya" />
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="787245154718571" type="krolya">
+                        <action id="4" name="Set animation" sid="787245154718571" type="effect_krolya">
                             <param id="0" name="Animation">&quot;fall&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -109,7 +109,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="7" name="Set mirrored" sid="980827221486424" type="krolya">
+                        <action id="7" name="Set mirrored" sid="980827221486424" type="effect_krolya">
                             <param id="0" name="State">1</param>
                         </action>
                     </actions>
@@ -124,10 +124,81 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="7" name="Set mirrored" sid="708555248135883" type="krolya">
+                        <action id="7" name="Set mirrored" sid="708555248135883" type="effect_krolya">
                             <param id="0" name="State">0</param>
                         </action>
                     </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="269625587035062" title="batmannn animation">
+            <sub-events>
+                <event-block sid="627765213191394">
+                    <conditions>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="984452866597850" type="enemy">
+                            <param id="0" name="Instance variable">issleep</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="576349096310560">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="611506370522796" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="788842100687288" type="effect_batmannn">
+                                    <param id="0" name="Animation">&quot;fly&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="129942863829820">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="777268013080045" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="782195616041912" type="effect_batmannn">
+                            <param id="0" name="Animation">&quot;sleep&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="167322354602284">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="380630279226075" type="enemy">
+                            <param id="0" name="Instance variable">enemy_type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="244317563196867">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="470783992105377" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="683380496064724" type="enemy">
+                                    <param id="0" name="Object">effect_batmannn</param>
+                                    <param id="1" name="Layer">&quot;VFX&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="557025037169086">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="299937048912974" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set position to another object" sid="806739843152835" type="effect_batmannn">
+                                    <param id="0" name="Object">enemy</param>
+                                    <param id="1" name="Image point (optional)">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>

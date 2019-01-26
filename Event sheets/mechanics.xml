@@ -752,57 +752,149 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-block sid="957711662588917">
-                    <conditions>
-                        <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="482087321126792" type="enemy">
-                            <param id="0" name="Object">gulya</param>
-                        </condition>
-                    </conditions>
-                    <actions />
+                <event-group description="" sid="982278361746423" title="enemy_simple">
                     <sub-events>
-                        <event-block sid="425030312271806">
+                        <comment>on the floor</comment>
+                        <event-block sid="564990184521350">
                             <conditions>
-                                <condition id="-1" name="Compare X" sid="418332533380521" type="enemy">
-                                    <param id="0" name="Comparison">4</param>
-                                    <param id="1" name="X co-ordinate">gulya.X + 16</param>
+                                <condition id="-7" name="Compare instance variable" sid="984023274908689" type="enemy">
+                                    <param id="0" name="Instance variable">enemy_type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
                                 </condition>
                             </conditions>
-                            <actions>
-                                <action behavior="Platform" id="7" name="Simulate control" sid="552825231959552" type="enemy">
-                                    <param id="0" name="Control">0</param>
-                                </action>
-                            </actions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="799171529572502">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="627586876436194" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Platform" id="11" name="Set enabled" sid="762720685819635" type="enemy">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="957711662588917">
+                                    <conditions>
+                                        <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="482087321126792" type="enemy">
+                                            <param id="0" name="Object">gulya</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="425030312271806">
+                                            <conditions>
+                                                <condition id="-1" name="Compare X" sid="418332533380521" type="enemy">
+                                                    <param id="0" name="Comparison">4</param>
+                                                    <param id="1" name="X co-ordinate">gulya.X + 16</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="Platform" id="7" name="Simulate control" sid="552825231959552" type="enemy">
+                                                    <param id="0" name="Control">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="944772417975639">
+                                            <conditions>
+                                                <condition id="-1" name="Compare X" sid="537389289818086" type="enemy">
+                                                    <param id="0" name="Comparison">2</param>
+                                                    <param id="1" name="X co-ordinate">gulya.X - 16</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="Platform" id="7" name="Simulate control" sid="412031257905337" type="enemy">
+                                                    <param id="0" name="Control">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block any="1" sid="267540471792432">
+                                            <conditions>
+                                                <condition behavior="Platform" id="10" name="Is by wall" sid="736411948416648" type="enemy">
+                                                    <param id="0" name="Side">0</param>
+                                                </condition>
+                                                <condition behavior="Platform" id="10" name="Is by wall" sid="600592747290866" type="enemy">
+                                                    <param id="0" name="Side">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="Platform" id="7" name="Simulate control" sid="314733172049564" type="enemy">
+                                                    <param id="0" name="Control">2</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
                         </event-block>
-                        <event-block sid="944772417975639">
+                        <comment>it can fly</comment>
+                        <event-block sid="894520347462494">
                             <conditions>
-                                <condition id="-1" name="Compare X" sid="537389289818086" type="enemy">
-                                    <param id="0" name="Comparison">2</param>
-                                    <param id="1" name="X co-ordinate">gulya.X - 16</param>
+                                <condition id="-7" name="Compare instance variable" sid="673478005528722" type="enemy">
+                                    <param id="0" name="Instance variable">enemy_type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
                                 </condition>
                             </conditions>
-                            <actions>
-                                <action behavior="Platform" id="7" name="Simulate control" sid="412031257905337" type="enemy">
-                                    <param id="0" name="Control">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block any="1" sid="267540471792432">
-                            <conditions>
-                                <condition behavior="Platform" id="10" name="Is by wall" sid="736411948416648" type="enemy">
-                                    <param id="0" name="Side">0</param>
-                                </condition>
-                                <condition behavior="Platform" id="10" name="Is by wall" sid="600592747290866" type="enemy">
-                                    <param id="0" name="Side">1</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action behavior="Platform" id="7" name="Simulate control" sid="314733172049564" type="enemy">
-                                    <param id="0" name="Control">2</param>
-                                </action>
-                            </actions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="896624416154528">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="120946073113212" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Pathfinding" id="3" name="Set enabled" sid="199827256608859" type="enemy">
+                                            <param id="0" name="Set">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="914009965261330">
+                                    <conditions>
+                                        <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="555545594665272" type="enemy">
+                                            <param id="0" name="Object">gulya</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="131459435117865">
+                                            <conditions>
+                                                <condition id="-4" name="Trigger once while true" sid="991938240011581" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="-13" name="Set boolean" sid="903580309520043" type="enemy">
+                                                    <param id="0" name="Instance variable">issleep</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="468532468899507">
+                                            <conditions>
+                                                <condition id="-6" name="Every X seconds" sid="662841490835939" type="System">
+                                                    <param id="0" name="Interval (seconds)">1.0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="Pathfinding" id="0" name="Find path" sid="872547311691516" type="enemy">
+                                                    <param id="0" name="X">gulya.X</param>
+                                                    <param id="1" name="Y">gulya.Y</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="715316132819180">
+                                    <conditions>
+                                        <condition behavior="Pathfinding" id="0" name="On path found" sid="935874120615610" type="enemy" />
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Pathfinding" id="1" name="Move along path" sid="324787111549642" type="enemy" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
-                </event-block>
+                </event-group>
             </sub-events>
         </event-group>
     </events>

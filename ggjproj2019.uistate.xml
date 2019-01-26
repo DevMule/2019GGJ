@@ -10,8 +10,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="2">LVL1</layout>
-        <event-sheet active="1" order="0">main settings</event-sheet>
+        <layout active="1" order="2">LVL1</layout>
+        <layout order="4">tech</layout>
+        <event-sheet order="0">main settings</event-sheet>
         <event-sheet order="1">mechanics</event-sheet>
         <event-sheet order="3">visual</event-sheet>
     </open-tabs>
@@ -45,6 +46,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/light_point/" />
         <folder expanded="1" path="animation-folder/Wall_invis/" />
         <folder expanded="1" path="animation-folder/light_player/" />
-        <folder expanded="1" path="animation-folder/krolya/" />
+        <folder expanded="1" path="animation-folder/effect_krolya/" />
+        <folder expanded="1" path="animation-folder/effect_batmannn/" />
     </folders-expanded>
 </c2uistate>
