@@ -41,7 +41,7 @@
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
-        <prop name="Downscaling">Low quality</prop>
+        <prop name="Downscaling">Medium quality</prop>
         <prop name="Enable WebGL">On</prop>
         <prop name="Fullscreen in browser">Letterbox scale</prop>
         <prop name="Fullscreen scaling">High quality</prop>
@@ -51,7 +51,7 @@
         <prop name="Physics engine">Box2D web</prop>
         <prop name="Preload sounds">Yes</prop>
         <prop name="Preview browser">NW.js</prop>
-        <prop name="Sampling">Point</prop>
+        <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
@@ -436,6 +436,121 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="krolya" sid="482387929997888">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="1" name="stand" pingpong="0" repeatcount="1" repeatto="0" sid="833806778169013" speed="15">
+                    <frame duration="1" hotspotX="0.605769" hotspotY="0.624215" original-source="C:\Users\Макс\Desktop\JAM\кроля анимация\krolya_0000_1-copy.png">
+                        <collision-poly>
+                            <point x="0.0540865" y="0.0403587" />
+                            <point x="0.5" y="0.0726457" />
+                            <point x="0.768029" y="0.173094" />
+                            <point x="0.980769" y="0.499552" />
+                            <point x="0.811298" y="0.859193" />
+                            <point x="0.5" y="0.997309" />
+                            <point x="0.305288" y="0.772197" />
+                            <point x="0.323317" y="0.499552" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="8" loop="1" name="run" pingpong="0" repeatcount="1" repeatto="0" sid="843920311049781" speed="25">
+                    <frame duration="1" hotspotX="0.605769" hotspotY="0.624215">
+                        <collision-poly>
+                            <point x="0.0540865" y="0.0403587" />
+                            <point x="0.5" y="0.0726457" />
+                            <point x="0.768029" y="0.173094" />
+                            <point x="0.980769" y="0.499552" />
+                            <point x="0.811298" y="0.859193" />
+                            <point x="0.5" y="0.997309" />
+                            <point x="0.305288" y="0.772197" />
+                            <point x="0.323317" y="0.499552" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.623223" hotspotY="0.631769" original-source="C:\Users\Макс\Desktop\JAM\кроля анимация\krolya_0001_1.5-copy.png">
+                        <collision-poly>
+                            <point x="0.0521327" y="0.0397112" />
+                            <point x="0.5" y="0.0622744" />
+                            <point x="0.766588" y="0.177798" />
+                            <point x="0.977488" y="0.5" />
+                            <point x="0.779621" y="0.83213" />
+                            <point x="0.5" y="0.99639" />
+                            <point x="0.350711" y="0.732852" />
+                            <point x="0.309242" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.616125" hotspotY="0.626442" original-source="C:\Users\Макс\Desktop\JAM\кроля анимация\krolya_0002_2-copy.png">
+                        <collision-poly>
+                            <point x="0.0529483" y="0.0390417" />
+                            <point x="0.499398" y="0.0310559" />
+                            <point x="0.794224" y="0.15173" />
+                            <point x="0.981949" y="0.499556" />
+                            <point x="0.770156" y="0.830523" />
+                            <point x="0.499398" y="0.999113" />
+                            <point x="0.352587" y="0.740018" />
+                            <point x="0.292419" y="0.499556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.595718" hotspotY="0.634208" original-source="C:\Users\Макс\Desktop\JAM\кроля анимация\krolya_0003_2.5-copy.png">
+                        <collision-poly>
+                            <point x="0.0554156" y="0.0372566" />
+                            <point x="0.5" y="0.0440305" />
+                            <point x="0.783375" y="0.145639" />
+                            <point x="0.971033" y="0.499577" />
+                            <point x="0.779597" y="0.85182" />
+                            <point x="0.5" y="0.891617" />
+                            <point x="0.261965" y="0.499577" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.573491" hotspotY="0.646025" original-source="C:\Users\Макс\Desktop\JAM\кроля анимация\krolya_0004_3-copy.png">
+                        <collision-poly>
+                            <point x="0.0551181" y="0.0351464" />
+                            <point x="0.5" y="0.0610879" />
+                            <point x="0.775591" y="0.143096" />
+                            <point x="0.956693" y="0.499582" />
+                            <point x="0.748031" y="0.839331" />
+                            <point x="0.5" y="0.979916" />
+                            <point x="0.384514" y="0.754812" />
+                            <point x="0.209974" y="0.499582" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.614622" hotspotY="0.637871" original-source="C:\Users\Макс\Desktop\JAM\кроля анимация\krolya_0005_3.5-copy.png">
+                        <collision-poly>
+                            <point x="0.0545229" y="0.0383944" />
+                            <point x="0.49938" y="0.0383944" />
+                            <point x="0.793061" y="0.145724" />
+                            <point x="0.975217" y="0.5" />
+                            <point x="0.769517" y="0.837696" />
+                            <point x="0.49938" y="0.937173" />
+                            <point x="0.417596" y="0.705934" />
+                            <point x="0.272615" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.631068" hotspotY="0.629663" original-source="C:\Users\Макс\Desktop\JAM\кроля анимация\krolya_0006_4-copy.png">
+                        <collision-poly>
+                            <point x="0.0533981" y="0.0390764" />
+                            <point x="0.5" y="0.0337478" />
+                            <point x="0.794903" y="0.150089" />
+                            <point x="0.979369" y="0.5" />
+                            <point x="0.796117" y="0.850799" />
+                            <point x="0.5" y="0.9254" />
+                            <point x="0.433252" y="0.682948" />
+                            <point x="0.288835" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.623962" hotspotY="0.613173" original-source="C:\Users\Макс\Desktop\JAM\кроля анимация\krolya_0007_4.5-copy.png">
+                        <collision-poly>
+                            <point x="0.0521945" y="0.0408163" />
+                            <point x="0.499407" y="0.0426716" />
+                            <point x="0.781732" y="0.170686" />
+                            <point x="0.988138" y="0.5" />
+                            <point x="0.797153" y="0.841373" />
+                            <point x="0.499407" y="0.981447" />
+                            <point x="0.432977" y="0.66141" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -445,6 +560,7 @@
     <event-folder>
         <event-sheet>mechanics.xml</event-sheet>
         <event-sheet>main settings.xml</event-sheet>
+        <event-sheet>visual.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Function" uid="33" />

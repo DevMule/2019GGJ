@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>visual</name>
+    <events>
+        <event-group description="" sid="690972691390194" title="walls">
+            <sub-events>
+                <event-block sid="389605471180290">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="107317332293945" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="207935398711261" type="Wall_invis">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="983696441360290" title="lihtnings">
+            <sub-events>
+                <event-block sid="467552149728570">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="828981482674926" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="248343820546670" type="light_player">
+                            <param id="0" name="Object">gulya</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="799050689627380" title="Player">
+            <sub-events>
+                <event-block sid="773404771171060">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="685144079423594" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="283310847484154" type="gulya">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="562356361622800">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="148485449992109" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="993864387875927" type="krolya">
+                            <param id="0" name="Object">gulya</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="302641550843235">
+                    <conditions>
+                        <condition behavior="Platform" id="0" name="Is moving" sid="972293177220386" type="gulya" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="955967774361161" type="krolya">
+                            <param id="0" name="Animation">&quot;run&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="274588875418699">
+                    <conditions>
+                        <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="726160062116687" type="gulya" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="399242451378195" type="krolya">
+                            <param id="0" name="Animation">&quot;stand&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
