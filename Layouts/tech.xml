@@ -6498,7 +6498,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Tilemap" uid="181">
+                <instance type="Tilemap_wall" uid="181">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <tile-width>64</tile-width>

@@ -4,11 +4,11 @@
 It is entirely optional and the project will load without it.  If you are placing the project under source control,
 you probably do not want to add any .uistate.xml files to the repository.-->
     <camera>
-        <position-x>5635.33</position-x>
-        <position-y>4861.14</position-y>
-        <position-z>382.356</position-z>
-        <lookat-x>5635.33</lookat-x>
-        <lookat-y>4861.14</lookat-y>
+        <position-x>7766.23</position-x>
+        <position-y>5953.98</position-y>
+        <position-z>1000</position-z>
+        <lookat-x>7766.23</lookat-x>
+        <lookat-y>5953.98</lookat-y>
         <lookat-z>0</lookat-z>
     </camera>
     <snap-to-grid>1</snap-to-grid>
@@ -23,11 +23,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Margins" />
         <property expanded="1" name="Effects" />
     </properties>
-    <active-layer name="game" />
+    <active-layer name="tiles_walls" />
     <layers>
-        <layer locked="1" name="tiles" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="tiles_back" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="tiles_walls" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="solid" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="game" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="game" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="VFX" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="lightnings" parallax-in-editor="0" visible="0" />
         <layer locked="1" name="mobile_joystick" parallax-in-editor="0" visible="0" />

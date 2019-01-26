@@ -328,7 +328,7 @@
         <object-type name="Touch" sid="138025785447705">
             <plugin id="Touch" />
         </object-type>
-        <object-type name="Tilemap" sid="759708877720459">
+        <object-type name="Tilemap_wall" sid="759708877720459">
             <plugin id="Tilemap" />
             <behaviors>
                 <behavior-type name="Solid" sid="718487514285295">
@@ -702,6 +702,11 @@
                     </frame>
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="Tilemap_back" sid="696139114649108">
+            <plugin id="Tilemap" />
+            <texture original-source="C:\Users\Макс\Desktop\constr\textures\blocks1.bmp" />
+            <tiles />
         </object-type>
     </object-folder>
     <families />

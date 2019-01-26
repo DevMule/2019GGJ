@@ -131,7 +131,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="269625587035062" title="batmannn animation">
+        <event-group description="" sid="269625587035062" title="enemy animation">
             <sub-events>
                 <event-block sid="607289656211483">
                     <conditions>
