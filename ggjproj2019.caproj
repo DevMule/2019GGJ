@@ -92,7 +92,16 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="376488087089692" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.232" y="0" />
+                            <point x="0.728" y="0" />
+                            <point x="1" y="0.508" />
+                            <point x="0.74" y="1" />
+                            <point x="0.236" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -250,8 +259,10 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="220614432019414" speed="5">
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="220614432019414" speed="0">
                     <frame duration="1" hotspotX="0" hotspotY="0" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Макс\Desktop\constr\textures\blocks1.bmp" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -334,6 +345,9 @@
                 <behavior-type name="Solid" sid="718487514285295">
                     <behavior id="solid" />
                 </behavior-type>
+                <behavior-type name="Physics" sid="686225182223108">
+                    <behavior id="Physics" />
+                </behavior-type>
             </behaviors>
             <texture original-source="C:\Users\Макс\Desktop\constr\textures\blocks1.bmp" />
             <tiles>
@@ -350,6 +364,14 @@
                         <point x="0" y="0" />
                         <point x="0.5" y="0" />
                         <point x="0.5" y="1" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+                <tile id="79">
+                    <collision-poly>
+                        <point x="0" y="0" />
+                        <point x="0.4375" y="0" />
+                        <point x="0.9375" y="1" />
                         <point x="0" y="1" />
                     </collision-poly>
                 </tile>
@@ -385,11 +407,42 @@
                         <point x="0" y="1" />
                     </collision-poly>
                 </tile>
+                <tile id="147">
+                    <collision-poly>
+                        <point x="0" y="0.5" />
+                        <point x="1" y="0" />
+                        <point x="1" y="1" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
                 <tile id="154">
                     <collision-poly>
                         <point x="0" y="0" />
                         <point x="0.5" y="0" />
                         <point x="0.5" y="1" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+                <tile id="166">
+                    <collision-poly>
+                        <point x="0" y="0" />
+                        <point x="0.375" y="0" />
+                        <point x="1" y="0.5" />
+                        <point x="1" y="1" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+                <tile id="167">
+                    <collision-poly>
+                        <point x="1" y="0.5" />
+                        <point x="1" y="1" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+                <tile id="168">
+                    <collision-poly>
+                        <point x="1" y="0" />
+                        <point x="1" y="1" />
                         <point x="0" y="1" />
                     </collision-poly>
                 </tile>
@@ -707,6 +760,16 @@
             <plugin id="Tilemap" />
             <texture original-source="C:\Users\Макс\Desktop\constr\textures\blocks1.bmp" />
             <tiles />
+        </object-type>
+        <object-type name="visual_effects" sid="291788627209965">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="305911119038708" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />

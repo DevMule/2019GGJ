@@ -48,5 +48,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/effect_krolya/" />
         <folder expanded="1" path="animation-folder/effect_batmannn/" />
         <folder expanded="1" path="animation-folder/effect_crot/" />
+        <folder expanded="1" path="animation-folder/visual_effects/" />
     </folders-expanded>
 </c2uistate>
