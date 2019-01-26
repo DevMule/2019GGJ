@@ -383,6 +383,14 @@
                         <point x="0" y="1" />
                     </collision-poly>
                 </tile>
+                <tile id="176">
+                    <collision-poly>
+                        <point x="0" y="0.1875" />
+                        <point x="1" y="0.1875" />
+                        <point x="1" y="1" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
                 <tile id="194">
                     <collision-poly>
                         <point x="0.5" y="0" />
