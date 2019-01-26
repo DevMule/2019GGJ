@@ -10,6 +10,7 @@
     <unique-id>3hbxyufzkd1r0</unique-id>
     <saved-with-version>26500</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
@@ -789,6 +790,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Audio" sid="786267439006974">
+            <plugin id="Audio" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -799,6 +803,7 @@
         <event-sheet>mechanics.xml</event-sheet>
         <event-sheet>main settings.xml</event-sheet>
         <event-sheet>visual.xml</event-sheet>
+        <event-sheet>sounds.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Function" uid="33" />
@@ -808,8 +813,44 @@
             </properties>
         </global-instance>
         <global-instance type="Keyboard" uid="264" />
+        <global-instance type="Audio" uid="338">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
     </global-instances>
-    <sounds-folder />
+    <sounds-folder>
+        <file name="lever-1.ogg" />
+        <file name="lever-2.ogg" />
+        <file name="ouch-1.ogg" />
+        <file name="ouch-2.ogg" />
+        <file name="ouch-3.ogg" />
+        <file name="ouch-4.ogg" />
+        <file name="pickup.ogg" />
+        <file name="die-1.ogg" />
+        <file name="die-2.ogg" />
+        <file name="die-3.ogg" />
+        <file name="bass-background-ambient.ogg" />
+        <file name="mouse-1.ogg" />
+        <file name="mouse-2.ogg" />
+        <file name="mouse-3.ogg" />
+        <file name="mouse-4.ogg" />
+        <file name="beaver-ogh-1.ogg" />
+        <file name="beaver-ogh-2.ogg" />
+        <file name="beaver-ogh-3.ogg" />
+        <file name="mole-ogh-1.ogg" />
+        <file name="mole-ogh-2.ogg" />
+        <file name="mole-ogh-3.ogg" />
+    </sounds-folder>
     <music-folder />
     <files-folder>
         <file-folder name="Icons">

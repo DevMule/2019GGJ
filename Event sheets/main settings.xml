@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>main settings</name>
     <events>
+        <include>sounds</include>
         <include>visual</include>
         <include>mechanics</include>
         <event-group description="" sid="925667450602992" title="DEVICE SETTINGS">

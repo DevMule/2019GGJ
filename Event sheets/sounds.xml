@@ -1,0 +1,615 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>sounds</name>
+    <events>
+        <event-group description="" sid="598288359796835" title="themes">
+            <sub-events>
+                <event-block sid="201847086433936">
+                    <conditions>
+                        <condition id="0" name="On function" sid="551039543645014" type="Function">
+                            <param id="0" name="Name">&quot;StartTheme&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="850936021061129" title="sounds">
+            <sub-events>
+                <event-block sid="744363750234629">
+                    <conditions>
+                        <condition id="0" name="On function" sid="935603342793932" type="Function">
+                            <param id="0" name="Name">&quot;DoSingleSound&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <comment>player</comment>
+                        <event-block sid="865077335332913">
+                            <conditions>
+                                <condition id="1" name="Compare parameter" sid="203897745516030" type="Function">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;player_hit&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <variable constant="0" name="rand" sid="114743853027335" static="0" type="number">0</variable>
+                                <event-block sid="925490019697589">
+                                    <conditions />
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="743527701880042" type="System">
+                                            <param id="0" name="Variable">rand</param>
+                                            <param id="1" name="Value">round(random(1,4))</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="762431209929611">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="557275413754228" type="System">
+                                                    <param id="0" name="Variable">rand</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="25" name="Play at object" sid="546671290634200" type="Audio">
+                                                    <param id="0" name="Audio file">ouch-1</param>
+                                                    <param id="1" name="Loop">0</param>
+                                                    <param id="2" name="Volume">0</param>
+                                                    <param id="3" name="Object">gulya</param>
+                                                    <param id="4" name="Inner angle">360</param>
+                                                    <param id="5" name="Outer angle">360</param>
+                                                    <param id="6" name="Outer gain">0</param>
+                                                    <param id="7" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="847423737844185">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="444107909429610" type="System" />
+                                                <condition id="-14" name="Compare variable" sid="240740992263618" type="System">
+                                                    <param id="0" name="Variable">rand</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="25" name="Play at object" sid="572747664364009" type="Audio">
+                                                    <param id="0" name="Audio file">ouch-2</param>
+                                                    <param id="1" name="Loop">0</param>
+                                                    <param id="2" name="Volume">0</param>
+                                                    <param id="3" name="Object">gulya</param>
+                                                    <param id="4" name="Inner angle">360</param>
+                                                    <param id="5" name="Outer angle">360</param>
+                                                    <param id="6" name="Outer gain">0</param>
+                                                    <param id="7" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="344444801307137">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="280944347292760" type="System" />
+                                                <condition id="-14" name="Compare variable" sid="172041129106046" type="System">
+                                                    <param id="0" name="Variable">rand</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="25" name="Play at object" sid="296163318697816" type="Audio">
+                                                    <param id="0" name="Audio file">ouch-3</param>
+                                                    <param id="1" name="Loop">0</param>
+                                                    <param id="2" name="Volume">0</param>
+                                                    <param id="3" name="Object">gulya</param>
+                                                    <param id="4" name="Inner angle">360</param>
+                                                    <param id="5" name="Outer angle">360</param>
+                                                    <param id="6" name="Outer gain">0</param>
+                                                    <param id="7" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="649059618508210">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="675154640202872" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="25" name="Play at object" sid="899509297196073" type="Audio">
+                                                    <param id="0" name="Audio file">ouch-4</param>
+                                                    <param id="1" name="Loop">0</param>
+                                                    <param id="2" name="Volume">0</param>
+                                                    <param id="3" name="Object">gulya</param>
+                                                    <param id="4" name="Inner angle">360</param>
+                                                    <param id="5" name="Outer angle">360</param>
+                                                    <param id="6" name="Outer gain">0</param>
+                                                    <param id="7" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="734013006597128">
+                            <conditions>
+                                <condition id="1" name="Compare parameter" sid="489384178324748" type="Function">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;player_die&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <variable constant="0" name="rand" sid="176132519651876" static="0" type="number">0</variable>
+                                <event-block sid="968008028781686">
+                                    <conditions />
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="324509444286686" type="System">
+                                            <param id="0" name="Variable">rand</param>
+                                            <param id="1" name="Value">round(random(1,3))</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="720818090443137">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="354611369699758" type="System">
+                                                    <param id="0" name="Variable">rand</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="25" name="Play at object" sid="761773001519459" type="Audio">
+                                                    <param id="0" name="Audio file">die-1</param>
+                                                    <param id="1" name="Loop">0</param>
+                                                    <param id="2" name="Volume">0</param>
+                                                    <param id="3" name="Object">gulya</param>
+                                                    <param id="4" name="Inner angle">360</param>
+                                                    <param id="5" name="Outer angle">360</param>
+                                                    <param id="6" name="Outer gain">0</param>
+                                                    <param id="7" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="988870141512847">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="698521707433923" type="System" />
+                                                <condition id="-14" name="Compare variable" sid="264203400974858" type="System">
+                                                    <param id="0" name="Variable">rand</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="25" name="Play at object" sid="609304031794094" type="Audio">
+                                                    <param id="0" name="Audio file">die-2</param>
+                                                    <param id="1" name="Loop">0</param>
+                                                    <param id="2" name="Volume">0</param>
+                                                    <param id="3" name="Object">gulya</param>
+                                                    <param id="4" name="Inner angle">360</param>
+                                                    <param id="5" name="Outer angle">360</param>
+                                                    <param id="6" name="Outer gain">0</param>
+                                                    <param id="7" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="881292933804495">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="965932800764557" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="25" name="Play at object" sid="325159288998279" type="Audio">
+                                                    <param id="0" name="Audio file">die-3</param>
+                                                    <param id="1" name="Loop">0</param>
+                                                    <param id="2" name="Volume">0</param>
+                                                    <param id="3" name="Object">gulya</param>
+                                                    <param id="4" name="Inner angle">360</param>
+                                                    <param id="5" name="Outer angle">360</param>
+                                                    <param id="6" name="Outer gain">0</param>
+                                                    <param id="7" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <comment>triggers</comment>
+                        <event-block sid="792218067307251">
+                            <conditions>
+                                <condition id="1" name="Compare parameter" sid="485318060891582" type="Function">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;trigger_on&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="453778027799322">
+                                    <conditions>
+                                        <condition id="-14" name="Pick by unique ID" sid="553347353314418" type="trigger">
+                                            <param id="0" name="Unique ID">Function.Param(1)</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="25" name="Play at object" sid="958763852195176" type="Audio">
+                                            <param id="0" name="Audio file">lever-2</param>
+                                            <param id="1" name="Loop">0</param>
+                                            <param id="2" name="Volume">0</param>
+                                            <param id="3" name="Object">trigger</param>
+                                            <param id="4" name="Inner angle">360</param>
+                                            <param id="5" name="Outer angle">360</param>
+                                            <param id="6" name="Outer gain">10</param>
+                                            <param id="7" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="836248604895788">
+                            <conditions>
+                                <condition id="1" name="Compare parameter" sid="179279011439135" type="Function">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;trigger_off&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="205989002807332">
+                                    <conditions>
+                                        <condition id="-14" name="Pick by unique ID" sid="811026302087281" type="trigger">
+                                            <param id="0" name="Unique ID">Function.Param(1)</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="25" name="Play at object" sid="784744451376202" type="Audio">
+                                            <param id="0" name="Audio file">lever-1</param>
+                                            <param id="1" name="Loop">0</param>
+                                            <param id="2" name="Volume">0</param>
+                                            <param id="3" name="Object">trigger</param>
+                                            <param id="4" name="Inner angle">360</param>
+                                            <param id="5" name="Outer angle">360</param>
+                                            <param id="6" name="Outer gain">10</param>
+                                            <param id="7" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <comment>collect objects</comment>
+                        <event-block sid="834716133764090">
+                            <conditions>
+                                <condition id="1" name="Compare parameter" sid="640413492329760" type="Function">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;collect&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="508739798397936">
+                                    <conditions />
+                                    <actions>
+                                        <action id="25" name="Play at object" sid="385215024128101" type="Audio">
+                                            <param id="0" name="Audio file">pickup</param>
+                                            <param id="1" name="Loop">0</param>
+                                            <param id="2" name="Volume">0</param>
+                                            <param id="3" name="Object">gulya</param>
+                                            <param id="4" name="Inner angle">360</param>
+                                            <param id="5" name="Outer angle">360</param>
+                                            <param id="6" name="Outer gain">0</param>
+                                            <param id="7" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <comment>enemies</comment>
+                        <event-block sid="752275035812833">
+                            <conditions>
+                                <condition id="1" name="Compare parameter" sid="287371192275382" type="Function">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;bat_ogh&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <variable constant="0" name="rand" sid="106282149923319" static="0" type="number">0</variable>
+                                <event-block sid="889795817542089">
+                                    <conditions>
+                                        <condition id="-14" name="Pick by unique ID" sid="584548670686832" type="enemy">
+                                            <param id="0" name="Unique ID">Function.Param(1)</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="692142670790364" type="System">
+                                            <param id="0" name="Variable">rand</param>
+                                            <param id="1" name="Value">round(random(1,4))</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="481335129016024">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="762725419068443" type="System">
+                                                    <param id="0" name="Variable">rand</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="25" name="Play at object" sid="527295344820004" type="Audio">
+                                                    <param id="0" name="Audio file">mouse-1</param>
+                                                    <param id="1" name="Loop">0</param>
+                                                    <param id="2" name="Volume">0</param>
+                                                    <param id="3" name="Object">enemy</param>
+                                                    <param id="4" name="Inner angle">360</param>
+                                                    <param id="5" name="Outer angle">360</param>
+                                                    <param id="6" name="Outer gain">0</param>
+                                                    <param id="7" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="112701668836350">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="736617750459700" type="System" />
+                                                <condition id="-14" name="Compare variable" sid="170940250174770" type="System">
+                                                    <param id="0" name="Variable">rand</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="25" name="Play at object" sid="280335896710964" type="Audio">
+                                                    <param id="0" name="Audio file">mouse-2</param>
+                                                    <param id="1" name="Loop">0</param>
+                                                    <param id="2" name="Volume">0</param>
+                                                    <param id="3" name="Object">enemy</param>
+                                                    <param id="4" name="Inner angle">360</param>
+                                                    <param id="5" name="Outer angle">360</param>
+                                                    <param id="6" name="Outer gain">0</param>
+                                                    <param id="7" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="444555512312845">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="471171348549197" type="System" />
+                                                <condition id="-14" name="Compare variable" sid="684402743467941" type="System">
+                                                    <param id="0" name="Variable">rand</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="25" name="Play at object" sid="772761316656837" type="Audio">
+                                                    <param id="0" name="Audio file">mouse-3</param>
+                                                    <param id="1" name="Loop">0</param>
+                                                    <param id="2" name="Volume">0</param>
+                                                    <param id="3" name="Object">enemy</param>
+                                                    <param id="4" name="Inner angle">360</param>
+                                                    <param id="5" name="Outer angle">360</param>
+                                                    <param id="6" name="Outer gain">0</param>
+                                                    <param id="7" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="285246799287928">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="626793894999428" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="25" name="Play at object" sid="199033175338022" type="Audio">
+                                                    <param id="0" name="Audio file">mouse-4</param>
+                                                    <param id="1" name="Loop">0</param>
+                                                    <param id="2" name="Volume">0</param>
+                                                    <param id="3" name="Object">enemy</param>
+                                                    <param id="4" name="Inner angle">360</param>
+                                                    <param id="5" name="Outer angle">360</param>
+                                                    <param id="6" name="Outer gain">0</param>
+                                                    <param id="7" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="222917313951542">
+                            <conditions>
+                                <condition id="1" name="Compare parameter" sid="970187495945530" type="Function">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;beaver_ogh&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <variable constant="0" name="rand" sid="604759424240789" static="0" type="number">0</variable>
+                                <event-block sid="550162037404363">
+                                    <conditions>
+                                        <condition id="-14" name="Pick by unique ID" sid="469840628009482" type="enemy">
+                                            <param id="0" name="Unique ID">Function.Param(1)</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="608937048019429" type="System">
+                                            <param id="0" name="Variable">rand</param>
+                                            <param id="1" name="Value">round(random(1,3))</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="174989123721326">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="358077646628979" type="System">
+                                                    <param id="0" name="Variable">rand</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="25" name="Play at object" sid="539862012166499" type="Audio">
+                                                    <param id="0" name="Audio file">beaver-ogh-1</param>
+                                                    <param id="1" name="Loop">0</param>
+                                                    <param id="2" name="Volume">0</param>
+                                                    <param id="3" name="Object">enemy</param>
+                                                    <param id="4" name="Inner angle">360</param>
+                                                    <param id="5" name="Outer angle">360</param>
+                                                    <param id="6" name="Outer gain">0</param>
+                                                    <param id="7" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="629786820356739">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="859027072295131" type="System" />
+                                                <condition id="-14" name="Compare variable" sid="894932318376296" type="System">
+                                                    <param id="0" name="Variable">rand</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="25" name="Play at object" sid="806207682000279" type="Audio">
+                                                    <param id="0" name="Audio file">beaver-ogh-2</param>
+                                                    <param id="1" name="Loop">0</param>
+                                                    <param id="2" name="Volume">0</param>
+                                                    <param id="3" name="Object">enemy</param>
+                                                    <param id="4" name="Inner angle">360</param>
+                                                    <param id="5" name="Outer angle">360</param>
+                                                    <param id="6" name="Outer gain">0</param>
+                                                    <param id="7" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="620331969638677">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="842383296082050" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="25" name="Play at object" sid="315866163545358" type="Audio">
+                                                    <param id="0" name="Audio file">beaver-ogh-3</param>
+                                                    <param id="1" name="Loop">0</param>
+                                                    <param id="2" name="Volume">0</param>
+                                                    <param id="3" name="Object">enemy</param>
+                                                    <param id="4" name="Inner angle">360</param>
+                                                    <param id="5" name="Outer angle">360</param>
+                                                    <param id="6" name="Outer gain">0</param>
+                                                    <param id="7" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="218565902389420">
+                            <conditions>
+                                <condition id="1" name="Compare parameter" sid="844069242491757" type="Function">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;mole_ogh&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <variable constant="0" name="rand" sid="118035436047481" static="0" type="number">0</variable>
+                                <event-block sid="514472956596019">
+                                    <conditions>
+                                        <condition id="-14" name="Pick by unique ID" sid="424073286547367" type="enemy">
+                                            <param id="0" name="Unique ID">Function.Param(1)</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="440865337963472" type="System">
+                                            <param id="0" name="Variable">rand</param>
+                                            <param id="1" name="Value">round(random(1,3))</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="829381088207437">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="963837008166110" type="System">
+                                                    <param id="0" name="Variable">rand</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="25" name="Play at object" sid="256519996139095" type="Audio">
+                                                    <param id="0" name="Audio file">mole-ogh-1</param>
+                                                    <param id="1" name="Loop">0</param>
+                                                    <param id="2" name="Volume">0</param>
+                                                    <param id="3" name="Object">enemy</param>
+                                                    <param id="4" name="Inner angle">360</param>
+                                                    <param id="5" name="Outer angle">360</param>
+                                                    <param id="6" name="Outer gain">0</param>
+                                                    <param id="7" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="723154382802518">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="651905593840129" type="System" />
+                                                <condition id="-14" name="Compare variable" sid="265138986351685" type="System">
+                                                    <param id="0" name="Variable">rand</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="25" name="Play at object" sid="623934644883014" type="Audio">
+                                                    <param id="0" name="Audio file">mole-ogh-2</param>
+                                                    <param id="1" name="Loop">0</param>
+                                                    <param id="2" name="Volume">0</param>
+                                                    <param id="3" name="Object">enemy</param>
+                                                    <param id="4" name="Inner angle">360</param>
+                                                    <param id="5" name="Outer angle">360</param>
+                                                    <param id="6" name="Outer gain">0</param>
+                                                    <param id="7" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="629674477120771">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="892668042923732" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="25" name="Play at object" sid="663527471793093" type="Audio">
+                                                    <param id="0" name="Audio file">mole-ogh-3</param>
+                                                    <param id="1" name="Loop">0</param>
+                                                    <param id="2" name="Volume">0</param>
+                                                    <param id="3" name="Object">enemy</param>
+                                                    <param id="4" name="Inner angle">360</param>
+                                                    <param id="5" name="Outer angle">360</param>
+                                                    <param id="6" name="Outer gain">0</param>
+                                                    <param id="7" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="435302073934487">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="775125205301413" type="Keyboard">
+                    <param id="0" name="Key">32</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="122093953494818" type="Function">
+                    <param id="0" name="Name">&quot;DoSingleSound&quot;</param>
+                    <param id="1" name="Parameter {n}">&quot;bat_ogh&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

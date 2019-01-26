@@ -296,6 +296,10 @@
                                         <action id="-14" name="Toggle boolean" sid="673206743839620" type="trigger">
                                             <param id="0" name="Instance variable">current_state</param>
                                         </action>
+                                        <action id="0" name="Call function" sid="284593994225680" type="Function">
+                                            <param id="0" name="Name">&quot;DoSingleSound&quot;</param>
+                                            <param id="1" name="Parameter {n}">&quot;trigger_on&quot;{###}trigger.UID</param>
+                                        </action>
                                         <action id="-16" name="Wait" sid="381172229482189" type="System">
                                             <param id="0" name="Seconds">0.1</param>
                                         </action>
@@ -335,6 +339,10 @@
                                                     <param id="0" name="Instance variable">current_state</param>
                                                     <param id="1" name="Value">1</param>
                                                 </action>
+                                                <action id="0" name="Call function" sid="999102903533614" type="Function">
+                                                    <param id="0" name="Name">&quot;DoSingleSound&quot;</param>
+                                                    <param id="1" name="Parameter {n}">&quot;trigger_on&quot;{###}trigger.UID</param>
+                                                </action>
                                                 <action id="-16" name="Wait" sid="758698930622365" type="System">
                                                     <param id="0" name="Seconds">0.1</param>
                                                 </action>
@@ -355,6 +363,10 @@
                                         <action id="-13" name="Set boolean" sid="358427648665514" type="trigger">
                                             <param id="0" name="Instance variable">current_state</param>
                                             <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="736708973333340" type="Function">
+                                            <param id="0" name="Name">&quot;DoSingleSound&quot;</param>
+                                            <param id="1" name="Parameter {n}">&quot;trigger_off&quot;{###}trigger.UID</param>
                                         </action>
                                         <action id="-16" name="Wait" sid="414655777695709" type="System">
                                             <param id="0" name="Seconds">0.1</param>
