@@ -5664,6 +5664,8 @@
                     <instance-variables>
                         <jump_strenght>350</jump_strenght>
                         <trampoline_jump_strenght>1000</trampoline_jump_strenght>
+                        <health_points>3</health_points>
+                        <untouchable>false</untouchable>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">

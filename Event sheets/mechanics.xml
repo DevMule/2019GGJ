@@ -799,6 +799,17 @@
                                         </action>
                                     </actions>
                                     <sub-events>
+                                        <event-block sid="868120716164758">
+                                            <conditions>
+                                                <condition id="-4" name="Trigger once while true" sid="367110249048556" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Call function" sid="547432654124828" type="Function">
+                                                    <param id="0" name="Name">&quot;DoSingleSound&quot;</param>
+                                                    <param id="1" name="Parameter {n}">&quot;mole_ogh&quot;{###}enemy.UID</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
                                         <event-block sid="425030312271806">
                                             <conditions>
                                                 <condition id="-1" name="Compare X" sid="418332533380521" type="enemy">
@@ -900,6 +911,10 @@
                                                     <param id="0" name="Instance variable">issleep</param>
                                                     <param id="1" name="Value">0</param>
                                                 </action>
+                                                <action id="0" name="Call function" sid="573623022166764" type="Function">
+                                                    <param id="0" name="Name">&quot;DoSingleSound&quot;</param>
+                                                    <param id="1" name="Parameter {n}">&quot;bat_ogh&quot;{###}enemy.UID</param>
+                                                </action>
                                             </actions>
                                         </event-block>
                                         <event-block sid="468532468899507">
@@ -929,6 +944,54 @@
                         </event-block>
                     </sub-events>
                 </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="205799022626689" title="PLAYER HEALTH">
+            <sub-events>
+                <event-block sid="134837481521831">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="220745925304493" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-5" name="Set width" sid="107140801477642" type="healthbar_tiled">
+                            <param id="0" name="Width">64 * gulya.health_points</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="652348964772114">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="793823104293363" type="gulya">
+                            <param id="0" name="Object">enemy</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="403942347445437" type="gulya">
+                            <param id="0" name="Instance variable">untouchable</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="384218493964619" type="gulya">
+                            <param id="0" name="Instance variable">untouchable</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-12" name="Subtract from" sid="131084396630367" type="gulya">
+                            <param id="0" name="Instance variable">health_points</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="461645708577104" type="Function">
+                            <param id="0" name="Name">&quot;DoSingleSound&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;player_hit&quot;</param>
+                        </action>
+                        <action id="-5" name="Set width" sid="287340578144479" type="healthbar_tiled">
+                            <param id="0" name="Width">64 * gulya.health_points</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="961243554341602" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="204707614102077" type="gulya">
+                            <param id="0" name="Instance variable">untouchable</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
     </events>

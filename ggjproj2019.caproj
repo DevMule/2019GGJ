@@ -15,6 +15,7 @@
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
@@ -79,6 +80,8 @@
             <instance-variables>
                 <instance-variable name="jump_strenght" sid="791164356880691" type="number" />
                 <instance-variable name="trampoline_jump_strenght" sid="605632723610539" type="number" />
+                <instance-variable name="health_points" sid="123327351286163" type="number" />
+                <instance-variable name="untouchable" sid="530671529122124" type="boolean" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="996895109651824">
@@ -792,6 +795,10 @@
         </object-type>
         <object-type name="Audio" sid="786267439006974">
             <plugin id="Audio" />
+        </object-type>
+        <object-type name="healthbar_tiled" sid="839971407793060">
+            <plugin id="TiledBg" />
+            <texture />
         </object-type>
     </object-folder>
     <families />

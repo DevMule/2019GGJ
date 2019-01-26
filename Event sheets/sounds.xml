@@ -604,12 +604,7 @@
                     <param id="0" name="Key">32</param>
                 </condition>
             </conditions>
-            <actions>
-                <action id="0" name="Call function" sid="122093953494818" type="Function">
-                    <param id="0" name="Name">&quot;DoSingleSound&quot;</param>
-                    <param id="1" name="Parameter {n}">&quot;bat_ogh&quot;</param>
-                </action>
-            </actions>
+            <actions />
         </event-block>
     </events>
 </c2eventsheet>
