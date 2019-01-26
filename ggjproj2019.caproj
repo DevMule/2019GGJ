@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>ggjproj2019</name>
+    <description></description>
+    <version>0.0.1</version>
+    <author>devmule</author>
+    <author-email></author-email>
+    <author-website></author-website>
+    <app-id></app-id>
+    <unique-id>3hbxyufzkd1r0</unique-id>
+    <saved-with-version>26500</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="LOS" version="1">Line Of Sight</behavior>
+        <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects>
+        <effect author="Scirra" id="multiply">Multiply</effect>
+    </used-effects>
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Low quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Percentage text</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D web</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">NW.js</prop>
+        <prop name="Sampling">Point</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="wall" sid="829657229374303">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="985998706930312">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="WallPhys" sid="993738816412162">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="834824077753912" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gulya" sid="154404085724617">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="jump_strenght" sid="791164356880691" type="number" />
+                <instance-variable name="trampoline_jump_strenght" sid="605632723610539" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="996895109651824">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="151545811913479">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="389362280540243">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="376488087089692" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="trampoline" sid="927852828575977">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="pulse_power" sid="965943094127655" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="5" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="417508094294055" speed="45">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Arrow" sid="608339283338079">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="575975705994611" speed="5">
+                    <frame duration="1" hotspotX="0.502304" hotspotY="0.502645" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="teleporter" sid="515512434883163">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="current_id" sid="598933591828510" type="number" />
+                <instance-variable name="to_teleport_id" sid="136228891199956" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="150284310943447" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.752" y="0.32" />
+                            <point x="0.744" y="0.588" />
+                            <point x="0" y="0.788" />
+                            <point x="0" y="0.2" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="lvl_messages_text" sid="533560460385736">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Function" sid="378194115158685">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="platform" sid="810317180832744">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="965447079150777">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="803957395447048">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="move_1" sid="692743987099093">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="move_2" sid="354531545927755">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="540380763254319" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="box" sid="801050427385726">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="240101724421118">
+                    <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="436025159978925">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="961107381473537" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="trigger" sid="686808666557046">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="trigger_id" sid="378613241043126" type="number" />
+                <instance-variable name="door_id" sid="900787464769940" type="number" />
+                <instance-variable name="current_state" sid="704931930437098" type="boolean" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="btn" pingpong="0" repeatcount="1" repeatto="0" sid="225197796792231" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.108" y="0.664" />
+                            <point x="0.864" y="0.668" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.108" y="0.664" />
+                            <point x="0.864" y="0.668" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="lvr" pingpong="0" repeatcount="1" repeatto="0" sid="884020502609583" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.18" y="0.304" />
+                            <point x="0.776" y="0.296" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.18" y="0.304" />
+                            <point x="0.776" y="0.296" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="invis" pingpong="0" repeatcount="1" repeatto="0" sid="877928543455691" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="door" sid="459830148701111">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="door_id" sid="728265510037720" type="number" />
+                <instance-variable comment="ids like: 1, 5, 12 etc." name="triggers_ids" sid="820955551175971" type="string" />
+                <instance-variable comment="OR - false, AND - true" name="AND_OR" sid="468294041594099" type="boolean" />
+                <instance-variable name="is_opened" sid="346620749670939" type="boolean" />
+                <instance-variable name="invert_opened_sygnal" sid="748153041612056" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="544973940882177">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="187922891970884">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="220614432019414" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="debug_text" sid="246611493266270">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="enemy" sid="900564482945405">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="723754338210301">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="LineOfSight" sid="351855242112754">
+                    <behavior id="LOS" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="752581774479962" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cataclysm" sid="681323696108461">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="x_pos_to_start" sid="637527066276313" type="number" />
+                <instance-variable name="x_pos_to_finish" sid="345899632418590" type="number" />
+                <instance-variable name="active_at_start" sid="410157363559857" type="boolean" />
+                <instance-variable comment="time in sec. between spawning and beggining to move" name="await_time" sid="583189641305916" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="205925816373005">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="794489775722487" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mobile_Button" sid="813685218935354">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="769758482147753" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="138025785447705">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="Tilemap" sid="759708877720459">
+            <plugin id="Tilemap" />
+            <behaviors>
+                <behavior-type name="Solid" sid="718487514285295">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Макс\Desktop\constr\textures\blocks1.bmp" />
+            <tiles>
+                <tile id="55">
+                    <collision-poly>
+                        <point x="0.5" y="0" />
+                        <point x="1" y="0" />
+                        <point x="1" y="1" />
+                        <point x="0.5" y="1" />
+                    </collision-poly>
+                </tile>
+                <tile id="58">
+                    <collision-poly>
+                        <point x="0" y="0" />
+                        <point x="0.5" y="0" />
+                        <point x="0.5" y="1" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+                <tile id="119">
+                    <collision-poly>
+                        <point x="0.5" y="0" />
+                        <point x="1" y="0" />
+                        <point x="1" y="1" />
+                        <point x="0.5" y="1" />
+                    </collision-poly>
+                </tile>
+                <tile id="138">
+                    <collision-poly>
+                        <point x="0" y="0" />
+                        <point x="0.5" y="0" />
+                        <point x="0.5" y="1" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+                <tile id="140">
+                    <collision-poly>
+                        <point x="0.5" y="0" />
+                        <point x="1" y="0" />
+                        <point x="1" y="1" />
+                        <point x="0.5" y="1" />
+                    </collision-poly>
+                </tile>
+                <tile id="146">
+                    <collision-poly>
+                        <point x="0" y="0" />
+                        <point x="0.5" y="0" />
+                        <point x="0.5" y="1" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+                <tile id="154">
+                    <collision-poly>
+                        <point x="0" y="0" />
+                        <point x="0.5" y="0" />
+                        <point x="0.5" y="1" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+                <tile id="194">
+                    <collision-poly>
+                        <point x="0.5" y="0" />
+                        <point x="1" y="0" />
+                        <point x="1" y="1" />
+                        <point x="0.5" y="1" />
+                    </collision-poly>
+                </tile>
+            </tiles>
+        </object-type>
+        <object-type name="light_point" sid="156221305677374">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="point" pingpong="0" repeatcount="1" repeatto="0" sid="101912227272027" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="box" pingpong="0" repeatcount="1" repeatto="0" sid="665169060070257" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>tech.xml</layout>
+        <layout>LVL1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>mechanics.xml</event-sheet>
+        <event-sheet>main settings.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Function" uid="33" />
+        <global-instance type="Touch" uid="180">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

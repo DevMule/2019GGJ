@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>main settings</name>
+    <events>
+        <include>mechanics</include>
+        <event-group description="" sid="925667450602992" title="DEVICE SETTINGS">
+            <sub-events>
+                <event-block sid="170443735237926">
+                    <conditions>
+                        <condition id="-20" name="Is on mobile device" sid="239504772657170" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="797349149531450">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="113581049412499" type="Touch">
+                                    <param id="0" name="Object">Mobile_Button</param>
+                                </condition>
+                                <condition id="3" name="Compare frame" sid="367602966737914" type="Mobile_Button">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="260688174883186" type="gulya">
+                                    <param id="0" name="Control">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="377400990593180">
+                            <conditions>
+                                <condition id="4" name="Is touching object" sid="757676436848679" type="Touch">
+                                    <param id="0" name="Object">Mobile_Button</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="524235883220365">
+                                    <conditions>
+                                        <condition id="3" name="Compare frame" sid="399787419612763" type="Mobile_Button">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Number">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="944750670491406" type="gulya">
+                                            <param id="0" name="Control">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="472720362315412">
+                                    <conditions>
+                                        <condition id="3" name="Compare frame" sid="942674996263266" type="Mobile_Button">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Number">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="467306077633762" type="gulya">
+                                            <param id="0" name="Control">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="313964871947062">
+                    <conditions>
+                        <condition id="-20" name="Is on mobile device" sid="840203588679864" type="System" />
+                        <condition id="-4" name="Trigger once while true" sid="310135041417733" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="720630764872883" type="System">
+                            <param id="0" name="Layer">&quot;mobile_joystick&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="981138078984577">
+                    <conditions>
+                        <condition id="-20" inverted="1" name="Is on mobile device" sid="978223695169555" type="System" />
+                        <condition id="-4" name="Trigger once while true" sid="486745588223277" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="200038332903936" type="System">
+                            <param id="0" name="Layer">&quot;mobile_joystick&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

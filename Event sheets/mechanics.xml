@@ -1,0 +1,810 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>mechanics</name>
+    <events>
+        <event-group description="" sid="516682566191732" title="LIGHT" />
+        <event-group description="" sid="504193942367805" title="trampoline">
+            <sub-events>
+                <event-block sid="516343873713779">
+                    <conditions>
+                        <condition behavior="Platform" id="5" name="On jump" sid="693173225238277" type="gulya" />
+                        <condition id="1" name="Is overlapping another object" sid="450411246877576" type="gulya">
+                            <param id="0" name="Object">trampoline</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="4" name="Set jump strength" sid="901356291852698" type="gulya">
+                            <param id="0" name="Jump strength">trampoline.pulse_power</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="309654377592753" type="trampoline">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="6" name="Set speed" sid="125926586817950" type="trampoline">
+                            <param id="0" name="Speed">45</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="372137016578631">
+                    <conditions>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="936554378539900" type="gulya">
+                            <param id="0" name="Object">trampoline</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="516912301771499" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="4" name="Set jump strength" sid="342473784068084" type="gulya">
+                            <param id="0" name="Jump strength">Self.jump_strenght</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="292927033498258">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="398553005793632" type="trampoline">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="6" name="Set speed" sid="902968632212505" type="trampoline">
+                            <param id="0" name="Speed">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="226822657961181" title="teleports">
+            <sub-events>
+                <event-block sid="902177806747485">
+                    <conditions>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="762678772574389" type="gulya">
+                            <param id="0" name="Object">teleporter</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="946386001960987" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="4" name="Set jump strength" sid="650490128641585" type="gulya">
+                            <param id="0" name="Jump strength">Self.jump_strenght</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="238552943673654">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="811918617301803" type="gulya">
+                            <param id="0" name="Object">teleporter</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="859566356692007" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="4" name="Set jump strength" sid="375031986031070" type="gulya">
+                            <param id="0" name="Jump strength">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="205473752112366">
+                    <conditions>
+                        <condition behavior="Platform" id="5" name="On jump" sid="641506380122332" type="gulya" />
+                        <condition id="1" name="Is overlapping another object" sid="509768604384731" type="gulya">
+                            <param id="0" name="Object">teleporter</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="490555065455369" type="Function">
+                            <param id="0" name="Name">&quot;TP_CurPlayer_toID&quot;</param>
+                            <param id="1" name="Parameter {n}">gulya.UID{###}teleporter.to_teleport_id</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="142232941631316">
+                    <conditions>
+                        <condition id="0" name="On function" sid="900825831164423" type="Function">
+                            <param id="0" name="Name">&quot;TP_CurPlayer_toID&quot;</param>
+                        </condition>
+                        <condition id="1" name="Compare parameter" sid="613590777925922" type="Function">
+                            <param id="0" name="Index">1</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="402592326196518">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="499735601007511" type="System">
+                                    <param id="0" name="Object">teleporter</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="753771882741467" type="teleporter">
+                                    <param id="0" name="Instance variable">current_id</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Function.Param(1)</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="754544443447758">
+                                    <conditions>
+                                        <condition id="-14" name="Pick by unique ID" sid="372223989394820" type="gulya">
+                                            <param id="0" name="Unique ID">Function.Param(0)</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="281470462012408" type="System">
+                                            <param id="0" name="Seconds">0.1</param>
+                                        </action>
+                                        <action id="-3" name="Set position" sid="273738991625794" type="gulya">
+                                            <param id="0" name="X">teleporter.X</param>
+                                            <param id="1" name="Y">teleporter.Y</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="604293637200278" title="boxes">
+            <sub-events>
+                <event-block sid="637275972948381">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="530806354499196" type="gulya">
+                            <param id="0" name="Object">box</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="270926445038858">
+                            <conditions>
+                                <condition behavior="Platform" id="10" name="Is by wall" sid="886704058972204" type="gulya">
+                                    <param id="0" name="Side">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Physics" id="0" name="Apply force" sid="801184199836619" type="box">
+                                    <param id="0" name="Force X">-10</param>
+                                    <param id="1" name="Force Y">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="120908429005125">
+                            <conditions>
+                                <condition behavior="Platform" id="10" name="Is by wall" sid="300995712213898" type="gulya">
+                                    <param id="0" name="Side">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Physics" id="0" name="Apply force" sid="459308083054375" type="box">
+                                    <param id="0" name="Force X">10</param>
+                                    <param id="1" name="Force Y">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="425791363106255" title="triggers &amp; doors">
+            <sub-events>
+                <event-block sid="315307972555269">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="105400159209811" type="door">
+                            <param id="0" name="Instance variable">is_opened</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="481451557485076" type="door">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Physics" id="27" name="Set enabled" sid="790501575323381" type="door">
+                            <param id="0" name="Mode">0</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="866689190208939" type="door">
+                            <param id="0" name="Opacity">50</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="532995839519502">
+                    <conditions>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="421142221023828" type="door">
+                            <param id="0" name="Instance variable">is_opened</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="500558459495481" type="door">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="Physics" id="27" name="Set enabled" sid="269451634161472" type="door">
+                            <param id="0" name="Mode">1</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="866723972903971" type="door">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-group description="" sid="419518248212084" title="triggers changing state">
+                    <sub-events>
+                        <event-block sid="956140882496943">
+                            <conditions>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="170041929544695" type="gulya">
+                                    <param id="0" name="Object">trigger</param>
+                                </condition>
+                                <condition id="-4" name="Trigger once while true" sid="870982501857075" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="4" name="Set jump strength" sid="646392083056606" type="gulya">
+                                    <param id="0" name="Jump strength">Self.jump_strenght</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="814602358839543">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="439189252980629" type="gulya">
+                                    <param id="0" name="Object">trigger</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="106276026341041" type="trigger">
+                                    <param id="0" name="Animation">&quot;lvr&quot;</param>
+                                </condition>
+                                <condition id="-4" name="Trigger once while true" sid="270336284265874" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="4" name="Set jump strength" sid="796524325242409" type="gulya">
+                                    <param id="0" name="Jump strength">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="339610576738089">
+                            <conditions>
+                                <condition id="-8" name="Is boolean instance variable set" sid="262569113782616" type="trigger">
+                                    <param id="0" name="Instance variable">current_state</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="699325092331613" type="trigger">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="236511087479010">
+                            <conditions>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="217091865461171" type="trigger">
+                                    <param id="0" name="Instance variable">current_state</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="956527798415556" type="trigger">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="612464902387182">
+                            <conditions>
+                                <condition id="2" name="Is playing" sid="411879945124719" type="trigger">
+                                    <param id="0" name="Animation">&quot;lvr&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="992857344457358">
+                                    <conditions>
+                                        <condition behavior="Platform" id="5" name="On jump" sid="224334401941429" type="gulya" />
+                                        <condition id="1" name="Is overlapping another object" sid="940979381040925" type="trigger">
+                                            <param id="0" name="Object">gulya</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-14" name="Toggle boolean" sid="673206743839620" type="trigger">
+                                            <param id="0" name="Instance variable">current_state</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="381172229482189" type="System">
+                                            <param id="0" name="Seconds">0.1</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="269604626891116" type="Function">
+                                            <param id="0" name="Name">&quot;CheckDoorByID&quot;</param>
+                                            <param id="1" name="Parameter {n}">trigger.door_id</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="814130559149715">
+                            <conditions>
+                                <condition id="2" name="Is playing" sid="783894458443895" type="trigger">
+                                    <param id="0" name="Animation">&quot;btn&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block any="1" sid="838256448060325">
+                                    <conditions>
+                                        <condition id="1" name="Is overlapping another object" sid="736926627177909" type="trigger">
+                                            <param id="0" name="Object">gulya</param>
+                                        </condition>
+                                        <condition id="1" name="Is overlapping another object" sid="658698273300999" type="trigger">
+                                            <param id="0" name="Object">box</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="772477529695822">
+                                            <conditions>
+                                                <condition id="-4" name="Trigger once while true" sid="308014474021116" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="-13" name="Set boolean" sid="226725479808878" type="trigger">
+                                                    <param id="0" name="Instance variable">current_state</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="758698930622365" type="System">
+                                                    <param id="0" name="Seconds">0.1</param>
+                                                </action>
+                                                <action id="0" name="Call function" sid="179315187488510" type="Function">
+                                                    <param id="0" name="Name">&quot;CheckDoorByID&quot;</param>
+                                                    <param id="1" name="Parameter {n}">trigger.door_id</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="558086936834740">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="766642892618146" type="System" />
+                                        <condition id="-4" name="Trigger once while true" sid="473669965694270" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-13" name="Set boolean" sid="358427648665514" type="trigger">
+                                            <param id="0" name="Instance variable">current_state</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="414655777695709" type="System">
+                                            <param id="0" name="Seconds">0.1</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="564436283100305" type="Function">
+                                            <param id="0" name="Name">&quot;CheckDoorByID&quot;</param>
+                                            <param id="1" name="Parameter {n}">trigger.door_id</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="818318729094758">
+                            <conditions>
+                                <condition id="2" name="Is playing" sid="633288293301532" type="trigger">
+                                    <param id="0" name="Animation">&quot;invis&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="169881838135274">
+                                    <conditions>
+                                        <condition id="-2" name="On start of layout" sid="397634082680991" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Set opacity" sid="274662257787934" type="trigger">
+                                            <param id="0" name="Opacity">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block any="1" sid="391055124418971">
+                                    <conditions>
+                                        <condition id="1" name="Is overlapping another object" sid="231712780743450" type="trigger">
+                                            <param id="0" name="Object">gulya</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="846326872660882">
+                                            <conditions>
+                                                <condition id="-4" name="Trigger once while true" sid="649591861037134" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="-13" name="Set boolean" sid="803100527612658" type="trigger">
+                                                    <param id="0" name="Instance variable">current_state</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="609061460475609" type="System">
+                                                    <param id="0" name="Seconds">0.1</param>
+                                                </action>
+                                                <action id="0" name="Call function" sid="450535521239446" type="Function">
+                                                    <param id="0" name="Name">&quot;CheckDoorByID&quot;</param>
+                                                    <param id="1" name="Parameter {n}">trigger.door_id</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="655124702170771">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="773334777097857" type="System" />
+                                                <condition id="-4" name="Trigger once while true" sid="826342521360557" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="-13" name="Set boolean" sid="333608745351284" type="trigger">
+                                                    <param id="0" name="Instance variable">current_state</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="854898625792371" type="System">
+                                                    <param id="0" name="Seconds">0.1</param>
+                                                </action>
+                                                <action id="0" name="Call function" sid="924000213379766" type="Function">
+                                                    <param id="0" name="Name">&quot;CheckDoorByID&quot;</param>
+                                                    <param id="1" name="Parameter {n}">trigger.door_id</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="and then close or open" sid="240279416629844" title="doors check for logic">
+                    <sub-events>
+                        <event-block sid="489683199526959">
+                            <conditions>
+                                <condition id="0" name="On function" sid="795209542174854" type="Function">
+                                    <param id="0" name="Name">&quot;RequestTriggerStateByID&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="266080310036729">
+                                    <conditions>
+                                        <condition id="-11" name="For Each" sid="869998450028195" type="System">
+                                            <param id="0" name="Object">trigger</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="224723330954622" type="trigger">
+                                            <param id="0" name="Instance variable">trigger_id</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">Function.Param(0)</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="578607936935696">
+                                            <conditions>
+                                                <condition id="-8" name="Is boolean instance variable set" sid="527966681554933" type="trigger">
+                                                    <param id="0" name="Instance variable">current_state</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="1" name="Set return value" sid="777151205057345" type="Function">
+                                                    <param id="0" name="Value">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="846400687957419">
+                                            <conditions>
+                                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="255199102137333" type="trigger">
+                                                    <param id="0" name="Instance variable">current_state</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="1" name="Set return value" sid="930451061987310" type="Function">
+                                                    <param id="0" name="Value">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="393353113663834">
+                            <conditions>
+                                <condition id="0" name="On function" sid="518312427694510" type="Function">
+                                    <param id="0" name="Name">&quot;CheckDoorByID&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <variable constant="0" name="token_count" sid="126254182020172" static="0" type="number">0</variable>
+                                <variable constant="0" name="result" sid="752419324693142" static="0" type="number">0</variable>
+                                <event-block sid="104818235098030">
+                                    <conditions>
+                                        <condition id="1" name="Compare parameter" sid="968388239215911" type="Function">
+                                            <param id="0" name="Index">0</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="819351174382877">
+                                            <conditions>
+                                                <condition id="-11" name="For Each" sid="131150825407613" type="System">
+                                                    <param id="0" name="Object">door</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="652855936349627" type="door">
+                                                    <param id="0" name="Instance variable">door_id</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">Function.Param(0)</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="429079006830060" type="System">
+                                                    <param id="0" name="Variable">token_count</param>
+                                                    <param id="1" name="Value">tokencount(door.triggers_ids, &quot;,&quot;)</param>
+                                                </action>
+                                            </actions>
+                                            <sub-events>
+                                                <event-block sid="173725085499819">
+                                                    <conditions>
+                                                        <condition id="-8" name="Is boolean instance variable set" sid="530578456721563" type="door">
+                                                            <param id="0" name="Instance variable">AND_OR</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-9" name="Set value" sid="714632634620528" type="System">
+                                                            <param id="0" name="Variable">result</param>
+                                                            <param id="1" name="Value">1</param>
+                                                        </action>
+                                                    </actions>
+                                                    <sub-events>
+                                                        <event-block sid="104864894919606">
+                                                            <conditions>
+                                                                <condition id="-10" name="For" sid="362705347914413" type="System">
+                                                                    <param id="0" name="Name">&quot;token&quot;</param>
+                                                                    <param id="1" name="Start index">0</param>
+                                                                    <param id="2" name="End index">token_count - 1</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="-9" name="Set value" sid="457076180812921" type="System">
+                                                                    <param id="0" name="Variable">result</param>
+                                                                    <param id="1" name="Value">result * (Function.Call(&quot;RequestTriggerStateByID&quot;, &#x0D;&#x0A;    int(    &#x0D;&#x0A;        tokenat(door.triggers_ids, loopindex(&quot;token&quot;), &quot;,&quot;)&#x0D;&#x0A;    )&#x0D;&#x0A;))</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                    </sub-events>
+                                                </event-block>
+                                                <event-block sid="462875926737628">
+                                                    <conditions>
+                                                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="270656840466240" type="door">
+                                                            <param id="0" name="Instance variable">AND_OR</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions />
+                                                    <sub-events>
+                                                        <event-block sid="594601804556044">
+                                                            <conditions>
+                                                                <condition id="-10" name="For" sid="458612760876835" type="System">
+                                                                    <param id="0" name="Name">&quot;token&quot;</param>
+                                                                    <param id="1" name="Start index">0</param>
+                                                                    <param id="2" name="End index">token_count - 1</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="-9" name="Set value" sid="401660342733240" type="System">
+                                                                    <param id="0" name="Variable">result</param>
+                                                                    <param id="1" name="Value">result + (Function.Call(&quot;RequestTriggerStateByID&quot;, &#x0D;&#x0A;    int(    &#x0D;&#x0A;        tokenat(door.triggers_ids, loopindex(&quot;token&quot;), &quot;,&quot;)&#x0D;&#x0A;    )&#x0D;&#x0A;))</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                    </sub-events>
+                                                </event-block>
+                                                <event-block sid="898343739110381">
+                                                    <conditions>
+                                                        <condition id="-14" name="Compare variable" sid="868385051579606" type="System">
+                                                            <param id="0" name="Variable">result</param>
+                                                            <param id="1" name="Comparison">4</param>
+                                                            <param id="2" name="Value">0</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions />
+                                                    <sub-events>
+                                                        <event-block sid="805485729801985">
+                                                            <conditions>
+                                                                <condition id="-8" name="Is boolean instance variable set" sid="274088683511097" type="door">
+                                                                    <param id="0" name="Instance variable">invert_opened_sygnal</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="-13" name="Set boolean" sid="979394131044797" type="door">
+                                                                    <param id="0" name="Instance variable">is_opened</param>
+                                                                    <param id="1" name="Value">0</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                        <event-block sid="184806825221044">
+                                                            <conditions>
+                                                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="545408797572447" type="door">
+                                                                    <param id="0" name="Instance variable">invert_opened_sygnal</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="-13" name="Set boolean" sid="597639754857949" type="door">
+                                                                    <param id="0" name="Instance variable">is_opened</param>
+                                                                    <param id="1" name="Value">1</param>
+                                                                </action>
+                                                                <action id="1" name="Append text" sid="298361447446709" type="debug_text">
+                                                                    <param id="0" name="Text">&quot;event&quot;</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                    </sub-events>
+                                                </event-block>
+                                                <event-block sid="890148939234592">
+                                                    <conditions>
+                                                        <condition id="-14" name="Compare variable" sid="383555591362947" type="System">
+                                                            <param id="0" name="Variable">result</param>
+                                                            <param id="1" name="Comparison">3</param>
+                                                            <param id="2" name="Value">0</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions />
+                                                    <sub-events>
+                                                        <event-block sid="650600959905154">
+                                                            <conditions>
+                                                                <condition id="-8" name="Is boolean instance variable set" sid="800924328586748" type="door">
+                                                                    <param id="0" name="Instance variable">invert_opened_sygnal</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="-13" name="Set boolean" sid="312916743743710" type="door">
+                                                                    <param id="0" name="Instance variable">is_opened</param>
+                                                                    <param id="1" name="Value">1</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                        <event-block sid="862501318939013">
+                                                            <conditions>
+                                                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="792928536449247" type="door">
+                                                                    <param id="0" name="Instance variable">invert_opened_sygnal</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="-13" name="Set boolean" sid="234006549052170" type="door">
+                                                                    <param id="0" name="Instance variable">is_opened</param>
+                                                                    <param id="1" name="Value">0</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                    </sub-events>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="156744861276040" title="enemies">
+            <sub-events>
+                <event-group description="" sid="472824676242401" title="enemy cataclism">
+                    <sub-events>
+                        <event-block sid="677768289572000">
+                            <conditions>
+                                <condition id="0" name="On function" sid="841329781519348" type="Function">
+                                    <param id="0" name="Name">&quot;EnemyCataclismBegin&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Set opacity" sid="783499127442810" type="cataclysm">
+                                    <param id="0" name="Opacity">100</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="869493023619340">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="672222823949043" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="307014771149743">
+                                    <conditions>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="416923367154117" type="cataclysm">
+                                            <param id="0" name="Instance variable">active_at_start</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="791029891389302" type="Function">
+                                            <param id="0" name="Name">&quot;EnemyCataclismBegin&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="702399517662136">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="325139866989795" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Set opacity" sid="818394974274375" type="cataclysm">
+                                            <param id="0" name="Opacity">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="194817114091717">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="684680156466568" type="gulya">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="X co-ordinate">cataclysm.x_pos_to_start</param>
+                                </condition>
+                                <condition id="-4" name="Trigger once while true" sid="580348759489068" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="126415082716930" type="Function">
+                                    <param id="0" name="Name">&quot;EnemyCataclismBegin&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="-16" name="Wait" sid="309255219026607" type="System">
+                                    <param id="0" name="Seconds">cataclysm.await_time</param>
+                                </action>
+                                <action behavior="Bullet" id="5" name="Set enabled" sid="378490661358099" type="cataclysm">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="735815861043827">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="798530754175650" type="cataclysm">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="X co-ordinate">Self.x_pos_to_finish</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Bullet" id="5" name="Set enabled" sid="810099432821911" type="cataclysm">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-block sid="957711662588917">
+                    <conditions>
+                        <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="482087321126792" type="enemy">
+                            <param id="0" name="Object">gulya</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="425030312271806">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="418332533380521" type="enemy">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="X co-ordinate">gulya.X + 16</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="552825231959552" type="enemy">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="944772417975639">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="537389289818086" type="enemy">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="X co-ordinate">gulya.X - 16</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="412031257905337" type="enemy">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="267540471792432">
+                            <conditions>
+                                <condition behavior="Platform" id="10" name="Is by wall" sid="736411948416648" type="enemy">
+                                    <param id="0" name="Side">0</param>
+                                </condition>
+                                <condition behavior="Platform" id="10" name="Is by wall" sid="600592747290866" type="enemy">
+                                    <param id="0" name="Side">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="314733172049564" type="enemy">
+                                    <param id="0" name="Control">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
