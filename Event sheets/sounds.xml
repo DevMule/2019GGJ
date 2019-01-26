@@ -237,7 +237,7 @@
                                         <action id="25" name="Play at object" sid="958763852195176" type="Audio">
                                             <param id="0" name="Audio file">lever-2</param>
                                             <param id="1" name="Loop">0</param>
-                                            <param id="2" name="Volume">0</param>
+                                            <param id="2" name="Volume">10</param>
                                             <param id="3" name="Object">trigger</param>
                                             <param id="4" name="Inner angle">360</param>
                                             <param id="5" name="Outer angle">360</param>
@@ -268,7 +268,7 @@
                                         <action id="25" name="Play at object" sid="784744451376202" type="Audio">
                                             <param id="0" name="Audio file">lever-1</param>
                                             <param id="1" name="Loop">0</param>
-                                            <param id="2" name="Volume">0</param>
+                                            <param id="2" name="Volume">10</param>
                                             <param id="3" name="Object">trigger</param>
                                             <param id="4" name="Inner angle">360</param>
                                             <param id="5" name="Outer angle">360</param>

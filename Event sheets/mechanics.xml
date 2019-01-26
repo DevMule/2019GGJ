@@ -186,6 +186,37 @@
         </event-group>
         <event-group description="" sid="425791363106255" title="triggers &amp; doors">
             <sub-events>
+                <event-block sid="130052485933360">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="334544924765331" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="635928080492729">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="282150144803379" type="System">
+                                    <param id="0" name="Object">door</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="209147100389040">
+                                    <conditions>
+                                        <condition id="3" name="Compare frame" sid="456487165779014" type="door">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Number">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Set opacity" sid="636490329970871" type="door">
+                                            <param id="0" name="Opacity">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
                 <event-block sid="315307972555269">
                     <conditions>
                         <condition id="-8" name="Is boolean instance variable set" sid="105400159209811" type="door">
@@ -200,7 +231,7 @@
                             <param id="0" name="Mode">0</param>
                         </action>
                         <action id="-16" name="Set opacity" sid="866689190208939" type="door">
-                            <param id="0" name="Opacity">50</param>
+                            <param id="0" name="Opacity">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -217,10 +248,22 @@
                         <action behavior="Physics" id="27" name="Set enabled" sid="269451634161472" type="door">
                             <param id="0" name="Mode">1</param>
                         </action>
-                        <action id="-16" name="Set opacity" sid="866723972903971" type="door">
-                            <param id="0" name="Opacity">100</param>
-                        </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="114039882663846">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="615203031998586" type="door">
+                                    <param id="0" name="Comparison">1</param>
+                                    <param id="1" name="Number">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Set opacity" sid="866723972903971" type="door">
+                                    <param id="0" name="Opacity">100</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-group description="" sid="419518248212084" title="triggers changing state">
                     <sub-events>
