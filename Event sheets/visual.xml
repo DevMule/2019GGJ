@@ -32,7 +32,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="799050689627380" title="Player">
+        <event-group description="" sid="799050689627380" title="Player animation">
             <sub-events>
                 <event-block sid="773404771171060">
                     <conditions>
@@ -74,6 +74,36 @@
                         <action id="4" name="Set animation" sid="399242451378195" type="krolya">
                             <param id="0" name="Animation">&quot;stand&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="569416992063255">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="697501067255963" type="Keyboard">
+                            <param id="0" name="Key">68</param>
+                        </condition>
+                        <condition id="2" name="Key is down" sid="282127941228638" type="Keyboard">
+                            <param id="0" name="Key">39</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="980827221486424" type="krolya">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="487295941154409">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="790867086684973" type="Keyboard">
+                            <param id="0" name="Key">65</param>
+                        </condition>
+                        <condition id="2" name="Key is down" sid="146836578758831" type="Keyboard">
+                            <param id="0" name="Key">37</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="708555248135883" type="krolya">
+                            <param id="0" name="State">0</param>
                         </action>
                     </actions>
                 </event-block>
