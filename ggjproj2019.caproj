@@ -263,6 +263,7 @@
             <instance-variables>
                 <instance-variable comment="0 - rat, 1 - bat" name="enemy_type" sid="213535592840482" type="number" />
                 <instance-variable name="issleep" sid="501941747437731" type="boolean" />
+                <instance-variable comment="0-l 1-r" name="lr" sid="863865712810571" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="723754338210301">
@@ -642,6 +643,61 @@
                             <point x="0.638281" y="0.638281" />
                             <point x="0.5" y="0.942969" />
                             <point x="0.217187" y="0.782812" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="effect_crot" sid="419611924294677">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="956727819615973" speed="15">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Макс\Desktop\JAM\крот\Кроть1.png">
+                        <collision-poly>
+                            <point x="0.285313" y="0.475521" />
+                            <point x="0.5" y="0.0828125" />
+                            <point x="0.871875" y="0.213542" />
+                            <point x="0.960938" y="0.5" />
+                            <point x="0.915313" y="0.858854" />
+                            <point x="0.5" y="0.929167" />
+                            <point x="0.083125" y="0.861458" />
+                            <point x="0.08" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Макс\Desktop\JAM\крот\Кроть2.png">
+                        <collision-poly>
+                            <point x="0.285313" y="0.475521" />
+                            <point x="0.5" y="0.0828125" />
+                            <point x="0.871875" y="0.213542" />
+                            <point x="0.960938" y="0.5" />
+                            <point x="0.915313" y="0.858854" />
+                            <point x="0.5" y="0.929167" />
+                            <point x="0.083125" y="0.861458" />
+                            <point x="0.08" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Макс\Desktop\JAM\крот\Кроть3.png">
+                        <collision-poly>
+                            <point x="0.285313" y="0.475521" />
+                            <point x="0.5" y="0.0828125" />
+                            <point x="0.871875" y="0.213542" />
+                            <point x="0.960938" y="0.5" />
+                            <point x="0.915313" y="0.858854" />
+                            <point x="0.5" y="0.929167" />
+                            <point x="0.083125" y="0.861458" />
+                            <point x="0.08" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Макс\Desktop\JAM\крот\Кроть4.png">
+                        <collision-poly>
+                            <point x="0.285313" y="0.475521" />
+                            <point x="0.5" y="0.0828125" />
+                            <point x="0.871875" y="0.213542" />
+                            <point x="0.960938" y="0.5" />
+                            <point x="0.915313" y="0.858854" />
+                            <point x="0.5" y="0.929167" />
+                            <point x="0.083125" y="0.861458" />
+                            <point x="0.08" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>

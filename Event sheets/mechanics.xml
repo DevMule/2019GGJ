@@ -781,7 +781,11 @@
                                             <param id="0" name="Object">gulya</param>
                                         </condition>
                                     </conditions>
-                                    <actions />
+                                    <actions>
+                                        <action id="6" name="Set speed" sid="390544888645478" type="effect_crot">
+                                            <param id="0" name="Speed">15</param>
+                                        </action>
+                                    </actions>
                                     <sub-events>
                                         <event-block sid="425030312271806">
                                             <conditions>
@@ -793,6 +797,10 @@
                                             <actions>
                                                 <action behavior="Platform" id="7" name="Simulate control" sid="552825231959552" type="enemy">
                                                     <param id="0" name="Control">0</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="248613321088648" type="enemy">
+                                                    <param id="0" name="Instance variable">lr</param>
+                                                    <param id="1" name="Value">0</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -806,6 +814,10 @@
                                             <actions>
                                                 <action behavior="Platform" id="7" name="Simulate control" sid="412031257905337" type="enemy">
                                                     <param id="0" name="Control">1</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="573927421011941" type="enemy">
+                                                    <param id="0" name="Instance variable">lr</param>
+                                                    <param id="1" name="Value">1</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -825,6 +837,16 @@
                                             </actions>
                                         </event-block>
                                     </sub-events>
+                                </event-block>
+                                <event-block sid="550307416787280">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="598008256900281" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="6" name="Set speed" sid="900622794056523" type="effect_crot">
+                                            <param id="0" name="Speed">0</param>
+                                        </action>
+                                    </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>

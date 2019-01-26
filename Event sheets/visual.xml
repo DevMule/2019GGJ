@@ -133,37 +133,71 @@
         </event-group>
         <event-group description="" sid="269625587035062" title="batmannn animation">
             <sub-events>
-                <event-block sid="627765213191394">
+                <event-block sid="607289656211483">
                     <conditions>
-                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="984452866597850" type="enemy">
-                            <param id="0" name="Instance variable">issleep</param>
+                        <condition id="-7" name="Compare instance variable" sid="332686705027722" type="enemy">
+                            <param id="0" name="Instance variable">enemy_type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="576349096310560">
+                        <event-block sid="280952555696182">
                             <conditions>
-                                <condition id="-4" name="Trigger once while true" sid="611506370522796" type="System" />
+                                <condition id="-4" name="Trigger once while true" sid="128846716938889" type="System" />
                             </conditions>
                             <actions>
-                                <action id="4" name="Set animation" sid="788842100687288" type="effect_batmannn">
-                                    <param id="0" name="Animation">&quot;fly&quot;</param>
-                                    <param id="1" name="From">1</param>
+                                <action id="0" name="Spawn another object" sid="692637896372356" type="enemy">
+                                    <param id="0" name="Object">effect_crot</param>
+                                    <param id="1" name="Layer">&quot;VFX&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="560771304953198" type="enemy">
+                                    <param id="0" name="Opacity">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="363805650472636">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="540104161968646" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set position to another object" sid="975989093918785" type="effect_crot">
+                                    <param id="0" name="Object">enemy</param>
+                                    <param id="1" name="Image point (optional)">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="821976444534263">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="135861046240178" type="enemy">
+                                    <param id="0" name="Instance variable">lr</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="606429772288992" type="effect_crot">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="294417232642449">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="219450071300132" type="enemy">
+                                    <param id="0" name="Instance variable">lr</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="552609821415184" type="effect_crot">
+                                    <param id="0" name="State">0</param>
                                 </action>
                             </actions>
                         </event-block>
                     </sub-events>
-                </event-block>
-                <event-block sid="129942863829820">
-                    <conditions>
-                        <condition id="-22" name="Else" sid="777268013080045" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="4" name="Set animation" sid="782195616041912" type="effect_batmannn">
-                            <param id="0" name="Animation">&quot;sleep&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                    </actions>
                 </event-block>
                 <event-block sid="167322354602284">
                     <conditions>
@@ -185,6 +219,9 @@
                                     <param id="1" name="Layer">&quot;VFX&quot;</param>
                                     <param id="2" name="Image point">0</param>
                                 </action>
+                                <action id="-16" name="Set opacity" sid="540281070990724" type="enemy">
+                                    <param id="0" name="Opacity">0</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="557025037169086">
@@ -195,6 +232,38 @@
                                 <action id="-4" name="Set position to another object" sid="806739843152835" type="effect_batmannn">
                                     <param id="0" name="Object">enemy</param>
                                     <param id="1" name="Image point (optional)">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="627765213191394">
+                            <conditions>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="984452866597850" type="enemy">
+                                    <param id="0" name="Instance variable">issleep</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="576349096310560">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="611506370522796" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="788842100687288" type="effect_batmannn">
+                                            <param id="0" name="Animation">&quot;fly&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="129942863829820">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="777268013080045" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="782195616041912" type="effect_batmannn">
+                                    <param id="0" name="Animation">&quot;sleep&quot;</param>
+                                    <param id="1" name="From">1</param>
                                 </action>
                             </actions>
                         </event-block>
