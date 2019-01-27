@@ -11,7 +11,47 @@
                             <param id="0" name="Name">&quot;StartTheme&quot;</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="6" name="Stop" sid="878568198955073" type="Audio">
+                            <param id="0" name="Tag">&quot;theme&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="976817975309988">
+                            <conditions>
+                                <condition id="1" name="Compare parameter" sid="316197349724234" type="Function">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;begin&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="401066346791796" type="Audio">
+                                    <param id="0" name="Audio file">theme-c</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">-28</param>
+                                    <param id="1" name="Tag (optional)">&quot;theme&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="991395483640859">
+                            <conditions>
+                                <condition id="1" name="Compare parameter" sid="951787170031623" type="Function">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;dark&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="441381344553508" type="Audio">
+                                    <param id="0" name="Audio file">bass-background-ambient</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">-20</param>
+                                    <param id="1" name="Tag (optional)">&quot;theme&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
@@ -598,13 +638,30 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="435302073934487">
+        <event-block sid="598095738418730">
             <conditions>
-                <condition id="0" name="On key pressed" sid="775125205301413" type="Keyboard">
-                    <param id="0" name="Key">32</param>
+                <condition id="-2" name="On start of layout" sid="735201314652196" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="832927768624082" type="Function">
+                    <param id="0" name="Name">&quot;StartTheme&quot;</param>
+                    <param id="1" name="Parameter {n}">&quot;begin&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="923207849125514">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="546710403852690" type="gulya">
+                    <param id="0" name="Object">music_trigger</param>
                 </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action id="0" name="Call function" sid="719215321383037" type="Function">
+                    <param id="0" name="Name">&quot;StartTheme&quot;</param>
+                    <param id="1" name="Parameter {n}">music_trigger.theme</param>
+                </action>
+                <action id="-9" name="Destroy" sid="361288352544155" type="music_trigger" />
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

@@ -133,6 +133,15 @@
         </event-group>
         <event-group description="" sid="269625587035062" title="enemy animation">
             <sub-events>
+                <event-block sid="749747143993137">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="196136886342638" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="623811449966371" type="effect_batmannn" />
+                        <action id="-9" name="Destroy" sid="745536905099380" type="effect_crot" />
+                    </actions>
+                </event-block>
                 <event-block sid="607289656211483">
                     <conditions>
                         <condition id="-7" name="Compare instance variable" sid="332686705027722" type="enemy">
@@ -150,7 +159,7 @@
                             <actions>
                                 <action id="0" name="Spawn another object" sid="692637896372356" type="enemy">
                                     <param id="0" name="Object">effect_crot</param>
-                                    <param id="1" name="Layer">&quot;VFX&quot;</param>
+                                    <param id="1" name="Layer">&quot;VFX_top&quot;</param>
                                     <param id="2" name="Image point">0</param>
                                 </action>
                                 <action id="-16" name="Set opacity" sid="560771304953198" type="enemy">
@@ -216,7 +225,7 @@
                             <actions>
                                 <action id="0" name="Spawn another object" sid="683380496064724" type="enemy">
                                     <param id="0" name="Object">effect_batmannn</param>
-                                    <param id="1" name="Layer">&quot;VFX&quot;</param>
+                                    <param id="1" name="Layer">&quot;VFX_top&quot;</param>
                                     <param id="2" name="Image point">0</param>
                                 </action>
                                 <action id="-16" name="Set opacity" sid="540281070990724" type="enemy">

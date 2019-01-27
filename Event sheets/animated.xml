@@ -46,7 +46,7 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="758903275260508" type="dynamic_text">
-                            <param id="0" name="Text">&quot;Привет, сына, как дела?&quot;</param>
+                            <param id="0" name="Text">&quot;Доброе утро!&quot;</param>
                         </action>
                         <action id="-16" name="Set opacity" sid="140307283906949" type="mamma">
                             <param id="0" name="Opacity">100</param>
@@ -69,7 +69,7 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="970721035870574" type="dynamic_text">
-                            <param id="0" name="Text">&quot;Сгоняй ка мне за пивасиком&quot;</param>
+                            <param id="0" name="Text">&quot;Сегодня такой чудесный день!&quot;</param>
                         </action>
                         <action id="6" name="Set speed" sid="466956662044589" type="mamma">
                             <param id="0" name="Speed">7</param>
@@ -90,7 +90,7 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="428650191658815" type="dynamic_text">
-                            <param id="0" name="Text">&quot;погодка на улице просто блеск&quot;</param>
+                            <param id="0" name="Text">&quot;Будь добр, сходи на поляну за земляникой, а я приготовлю ягодный пирог к обеду! &quot;</param>
                         </action>
                         <action id="4" name="Set animation" sid="848750574517328" type="mamma">
                             <param id="0" name="Animation">&quot;close_eye&quot;</param>

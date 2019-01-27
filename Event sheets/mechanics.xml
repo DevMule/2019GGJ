@@ -869,6 +869,9 @@
                                                     <param id="0" name="Instance variable">lr</param>
                                                     <param id="1" name="Value">0</param>
                                                 </action>
+                                                <action id="7" name="Set mirrored" sid="878478912367591" type="effect_crot">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
                                             </actions>
                                         </event-block>
                                         <event-block sid="944772417975639">
@@ -885,6 +888,9 @@
                                                 <action id="-10" name="Set value" sid="573927421011941" type="enemy">
                                                     <param id="0" name="Instance variable">lr</param>
                                                     <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="7" name="Set mirrored" sid="376783881004099" type="effect_crot">
+                                                    <param id="0" name="State">0</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -958,6 +964,10 @@
                                                 <action id="0" name="Call function" sid="573623022166764" type="Function">
                                                     <param id="0" name="Name">&quot;DoSingleSound&quot;</param>
                                                     <param id="1" name="Parameter {n}">&quot;bat_ogh&quot;{###}enemy.UID</param>
+                                                </action>
+                                                <action id="4" name="Set animation" sid="595385523677818" type="effect_batmannn">
+                                                    <param id="0" name="Animation">&quot;fly&quot;</param>
+                                                    <param id="1" name="From">1</param>
                                                 </action>
                                             </actions>
                                         </event-block>

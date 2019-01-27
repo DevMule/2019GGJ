@@ -268,7 +268,7 @@
                     <frame duration="1" hotspotX="0" hotspotY="0" />
                     <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Макс\Desktop\constr\textures\blocks1.bmp" />
                     <frame duration="1" hotspotX="0" hotspotY="0" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -796,7 +796,7 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="20" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="305911119038708" speed="0">
+                <animation framecount="21" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="305911119038708" speed="0">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -984,14 +984,24 @@
                             <point x="0.5" y="0.0502642" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="C:\Users\Макс\Desktop\JAM\текстура и анимации\трава\трава_0006_1.png">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="C:\Users\Макс\Desktop\JAM\текстура и анимации\Кукуруза.png">
                         <collision-poly>
-                            <point x="0.877769" y="0.217176" />
-                            <point x="0.883511" y="0.932836" />
-                            <point x="0.940115" y="1" />
-                            <point x="0" y="1" />
+                            <point x="0.782824" y="0.877769" />
+                            <point x="0.0671642" y="0.883511" />
+                            <point x="0" y="0.940115" />
                             <point x="0" y="0" />
-                            <point x="0.50041" y="0.0874534" />
+                            <point x="1" y="0" />
+                            <point x="0.912547" y="0.50041" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Макс\Desktop\JAM\текстура и анимации\Дом.png">
+                        <collision-poly>
+                            <point x="0.132031" y="0.264062" />
+                            <point x="0.5" y="0.203906" />
+                            <point x="0.805273" y="0.389453" />
+                            <point x="0.9125" y="0.5" />
+                            <point x="0.998438" y="0.996875" />
+                            <point x="0.00136719" y="0.997266" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -1077,6 +1087,46 @@
         <object-type name="Text" sid="196337246420897">
             <plugin id="Text" />
         </object-type>
+        <object-type name="Sprite" sid="924570064882017">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="559653596756988" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Макс\Desktop\JAM\текстура и анимации\Фон\---_0007_-----14.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Макс\Desktop\JAM\текстура и анимации\Фон\---_0006_-----18.png">
+                        <collision-poly>
+                            <point x="0.0574219" y="0.125641" />
+                            <point x="0.5" y="0.217094" />
+                            <point x="0.939844" y="0.131624" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500219" hotspotY="0.502024" original-source="C:\Users\Макс\Desktop\JAM\текстура и анимации\Фон\---_0000_-----5.png">
+                        <collision-poly>
+                            <point x="0.0442013" y="0.408907" />
+                            <point x="0.499781" y="0.174089" />
+                            <point x="0.94442" y="0.51417" />
+                            <point x="0.940481" y="0.497976" />
+                            <point x="0.999125" y="0.991903" />
+                            <point x="0.000437637" y="0.995951" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="music_trigger" sid="380923807915167">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="theme" sid="532464397622773" type="string" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="593739687237319" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -1136,6 +1186,7 @@
         <file name="mole-ogh-1.ogg" />
         <file name="mole-ogh-2.ogg" />
         <file name="mole-ogh-3.ogg" />
+        <file name="theme-c.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>
