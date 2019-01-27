@@ -271,5 +271,98 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" sid="297526037947461" title="grass_weaving">
+            <sub-events>
+                <event-block sid="585891188508845">
+                    <conditions>
+                        <condition behavior="Platform" id="0" name="Is moving" sid="747897545157060" type="gulya" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="834468200853726">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="799248379902887" type="System">
+                                    <param id="0" name="Object">visual_effects</param>
+                                </condition>
+                                <condition id="3" name="Compare frame" sid="314822774536506" type="visual_effects">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="Number">13</param>
+                                </condition>
+                                <condition id="3" name="Compare frame" sid="936479314002668" type="visual_effects">
+                                    <param id="0" name="Comparison">3</param>
+                                    <param id="1" name="Number">19</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="163003710954241">
+                                    <conditions>
+                                        <condition id="1" inverted="1" name="Is overlapping another object" sid="318545660398752" type="gulya">
+                                            <param id="0" name="Object">visual_effects</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-8" name="Set angle" sid="281225713567505" type="visual_effects">
+                                            <param id="0" name="Angle">-90</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="434429138780513">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="378769058807414" type="gulya">
+                                    <param id="0" name="Object">visual_effects</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="354588987271731">
+                                    <conditions>
+                                        <condition id="3" name="Compare frame" sid="272035978736903" type="visual_effects">
+                                            <param id="0" name="Comparison">5</param>
+                                            <param id="1" name="Number">13</param>
+                                        </condition>
+                                        <condition id="3" name="Compare frame" sid="332146436309910" type="visual_effects">
+                                            <param id="0" name="Comparison">3</param>
+                                            <param id="1" name="Number">19</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="829410476003131">
+                                            <conditions>
+                                                <condition id="-1" name="Compare X" sid="292497491908456" type="visual_effects">
+                                                    <param id="0" name="Comparison">4</param>
+                                                    <param id="1" name="X co-ordinate">gulya.X</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-8" name="Set angle" sid="316780080589549" type="visual_effects">
+                                                    <param id="0" name="Angle">angle(Self.x, Self.y, gulya.X + 16, gulya.Y)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="847499385311074">
+                                            <conditions>
+                                                <condition id="-1" name="Compare X" sid="197089754399171" type="visual_effects">
+                                                    <param id="0" name="Comparison">2</param>
+                                                    <param id="1" name="X co-ordinate">gulya.X</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-8" name="Set angle" sid="665068541387907" type="visual_effects">
+                                                    <param id="0" name="Angle">angle(Self.x, Self.y, gulya.X - 16, gulya.Y)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

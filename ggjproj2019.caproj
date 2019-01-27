@@ -42,6 +42,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
+    <first-layout>animated</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -789,11 +790,210 @@
         </object-type>
         <object-type name="visual_effects" sid="291788627209965">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="196405451896643">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
-                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="305911119038708" speed="0">
+                <animation framecount="20" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="305911119038708" speed="0">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.50039" hotspotY="0.500304" original-source="C:\Users\Макс\Desktop\JAM\текстура и анимации\грибы\гриб_0000_Большая-ножка.png">
+                        <collision-poly>
+                            <point x="0.155824" y="0.121544" />
+                            <point x="0.499805" y="0.00121544" />
+                            <point x="0.798987" y="0.156791" />
+                            <point x="0.899883" y="0.499848" />
+                            <point x="0.87573" y="0.903069" />
+                            <point x="0.499805" y="0.994834" />
+                            <point x="0.122711" y="0.904284" />
+                            <point x="0.0841449" y="0.499848" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500235" hotspotY="0.500368" original-source="C:\Users\Макс\Desktop\JAM\текстура и анимации\грибы\гриб_0001_Layer12.png">
+                        <collision-poly>
+                            <point x="0.16651" y="0.260758" />
+                            <point x="0.5" y="0.0154469" />
+                            <point x="0.858854" y="0.221037" />
+                            <point x="0.980742" y="0.499816" />
+                            <point x="0.911696" y="0.861714" />
+                            <point x="0.5" y="0.999264" />
+                            <point x="0.0732738" y="0.885252" />
+                            <point x="0.0335838" y="0.499816" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500235" hotspotY="0.500368" original-source="C:\Users\Макс\Desktop\JAM\текстура и анимации\грибы\гриб_0002_Layer17.png">
+                        <collision-poly>
+                            <point x="0.16651" y="0.260758" />
+                            <point x="0.5" y="0.0154469" />
+                            <point x="0.858854" y="0.221037" />
+                            <point x="0.980742" y="0.499816" />
+                            <point x="0.911696" y="0.861714" />
+                            <point x="0.5" y="0.999264" />
+                            <point x="0.0732738" y="0.885252" />
+                            <point x="0.0335838" y="0.499816" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500235" hotspotY="0.500368" original-source="C:\Users\Макс\Desktop\JAM\текстура и анимации\грибы\гриб_0003_Layer18.png">
+                        <collision-poly>
+                            <point x="0.16651" y="0.260758" />
+                            <point x="0.5" y="0.0154469" />
+                            <point x="0.858854" y="0.221037" />
+                            <point x="0.980742" y="0.499816" />
+                            <point x="0.911696" y="0.861714" />
+                            <point x="0.5" y="0.999264" />
+                            <point x="0.0732738" y="0.885252" />
+                            <point x="0.0335838" y="0.499816" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500205" hotspotY="0.500499" original-source="C:\Users\Макс\Desktop\JAM\текстура и анимации\грибы\гриб_0004_Плоский-гриб.png">
+                        <collision-poly>
+                            <point x="0.0826497" y="0.201299" />
+                            <point x="0.5" y="0.0004995" />
+                            <point x="0.91735" y="0.201299" />
+                            <point x="0.997129" y="0.5" />
+                            <point x="0.907916" y="0.775724" />
+                            <point x="0.5" y="0.997003" />
+                            <point x="0.0984413" y="0.76024" />
+                            <point x="0.00656276" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Макс\Desktop\JAM\текстура и анимации\грибы\гриб_0005_1.3.png">
+                        <collision-poly>
+                            <point x="0.155734" y="0.275" />
+                            <point x="0.5" y="0.0075" />
+                            <point x="0.874233" y="0.222083" />
+                            <point x="0.969325" y="0.5" />
+                            <point x="0.94219" y="0.897917" />
+                            <point x="0.5" y="0.99375" />
+                            <point x="0.0740916" y="0.869167" />
+                            <point x="0.0648891" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Макс\Desktop\JAM\текстура и анимации\грибы\гриб_0006_1.2.png">
+                        <collision-poly>
+                            <point x="0.155734" y="0.275" />
+                            <point x="0.5" y="0.0075" />
+                            <point x="0.874233" y="0.222083" />
+                            <point x="0.969325" y="0.5" />
+                            <point x="0.94219" y="0.897917" />
+                            <point x="0.5" y="0.99375" />
+                            <point x="0.0740916" y="0.869167" />
+                            <point x="0.0648891" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Макс\Desktop\JAM\текстура и анимации\грибы\гриб_0007_1.1.png">
+                        <collision-poly>
+                            <point x="0.155734" y="0.275" />
+                            <point x="0.5" y="0.0075" />
+                            <point x="0.874233" y="0.222083" />
+                            <point x="0.969325" y="0.5" />
+                            <point x="0.94219" y="0.897917" />
+                            <point x="0.5" y="0.99375" />
+                            <point x="0.0740916" y="0.869167" />
+                            <point x="0.0648891" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Макс\Desktop\JAM\текстура и анимации\грибы\гриб_0008_Средняя-ножка.png">
+                        <collision-poly>
+                            <point x="0.258873" y="0.14877" />
+                            <point x="0.5" y="0.0104979" />
+                            <point x="0.796451" y="0.116977" />
+                            <point x="0.91858" y="0.5" />
+                            <point x="0.837161" y="0.906419" />
+                            <point x="0.5" y="0.996701" />
+                            <point x="0.0960334" y="0.944811" />
+                            <point x="0.165971" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Макс\Desktop\JAM\текстура и анимации\грибы\гриб_0009_Маленькая-ножка.png">
+                        <collision-poly>
+                            <point x="0.178832" y="0.170223" />
+                            <point x="0.5" y="0.00148883" />
+                            <point x="0.812826" y="0.178164" />
+                            <point x="0.983837" y="0.499752" />
+                            <point x="0.869134" y="0.875434" />
+                            <point x="0.5" y="0.999007" />
+                            <point x="0.11731" y="0.888337" />
+                            <point x="0.0172054" y="0.499752" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="C:\Users\Макс\Desktop\JAM\текстура и анимации\трава\трава_0002_5.png">
+                        <collision-poly>
+                            <point x="0.849412" y="0.307377" />
+                            <point x="0.690196" y="1" />
+                            <point x="0.876078" y="1" />
+                            <point x="0.500392" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="0.500392" y="0.0464267" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="C:\Users\Макс\Desktop\JAM\текстура и анимации\трава\трава_0001_6.png">
+                        <collision-poly>
+                            <point x="0.825838" y="0.330171" />
+                            <point x="0.861815" y="0.992063" />
+                            <point x="0.770237" y="1" />
+                            <point x="0.500409" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="0.500409" y="0.0573536" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.825838" y="0" />
+                            <point x="0.861815" y="0" />
+                            <point x="0.770237" y="0.551977" />
+                            <point x="0.500409" y="0.926658" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="0.500409" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="C:\Users\Макс\Desktop\JAM\текстура и анимации\трава\трава_0003_4.png">
+                        <collision-poly>
+                            <point x="0.836719" y="0.304629" />
+                            <point x="0.84375" y="1" />
+                            <point x="0.5" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="C:\Users\Макс\Desktop\JAM\текстура и анимации\трава\трава_0004_3.png">
+                        <collision-poly>
+                            <point x="0.812851" y="0.307485" />
+                            <point x="0.649799" y="0.844595" />
+                            <point x="0.86747" y="1" />
+                            <point x="0.500402" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="0.500402" y="0.0435494" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="C:\Users\Макс\Desktop\JAM\текстура и анимации\трава\трава_0005_2.png">
+                        <collision-poly>
+                            <point x="0.82623" y="0.304458" />
+                            <point x="0.966393" y="0.919118" />
+                            <point x="0.644262" y="1" />
+                            <point x="0.5" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0.0502642" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="C:\Users\Макс\Desktop\JAM\текстура и анимации\трава\трава_0006_1.png">
+                        <collision-poly>
+                            <point x="0.877769" y="0.217176" />
+                            <point x="0.883511" y="0.932836" />
+                            <point x="0.940115" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="0.50041" y="0.0874534" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
