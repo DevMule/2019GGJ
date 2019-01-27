@@ -1012,7 +1012,7 @@
         </object-type>
         <object-type name="healthbar_tiled" sid="839971407793060">
             <plugin id="TiledBg" />
-            <texture />
+            <texture original-source="C:\Users\Макс\Desktop\JAM\текстура и анимации\морковь.png" />
         </object-type>
         <object-type name="mamma" sid="327677033130206">
             <plugin id="Sprite" />
@@ -1123,6 +1123,31 @@
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="593739687237319" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="finish" sid="597510072149330">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="370938695400528" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Макс\Desktop\JAM\текстура и анимации\смерть.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Макс\Desktop\JAM\текстура и анимации\ТЫ вернулся домой.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="quicksave" sid="147600169062219">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="102011338842508" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="die_trigg" sid="523561687468828">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="238559349897683" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>

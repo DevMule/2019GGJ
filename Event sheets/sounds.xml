@@ -11,43 +11,73 @@
                             <param id="0" name="Name">&quot;StartTheme&quot;</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="6" name="Stop" sid="878568198955073" type="Audio">
-                            <param id="0" name="Tag">&quot;theme&quot;</param>
-                        </action>
-                    </actions>
+                    <actions />
                     <sub-events>
-                        <event-block sid="976817975309988">
+                        <event-block sid="342886638139335">
                             <conditions>
-                                <condition id="1" name="Compare parameter" sid="316197349724234" type="Function">
+                                <condition id="1" name="Compare parameter" sid="674869823139988" type="Function">
                                     <param id="0" name="Index">0</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;begin&quot;</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">&quot;stop&quot;</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Play" sid="401066346791796" type="Audio">
-                                    <param id="0" name="Audio file">theme-c</param>
-                                    <param id="2" name="Loop">1</param>
-                                    <param id="3" name="Volume">-28</param>
-                                    <param id="1" name="Tag (optional)">&quot;theme&quot;</param>
+                                <action id="6" name="Stop" sid="878568198955073" type="Audio">
+                                    <param id="0" name="Tag">&quot;theme&quot;</param>
                                 </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="976817975309988">
+                                    <conditions>
+                                        <condition id="1" name="Compare parameter" sid="316197349724234" type="Function">
+                                            <param id="0" name="Index">0</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;begin&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="401066346791796" type="Audio">
+                                            <param id="0" name="Audio file">theme-c</param>
+                                            <param id="2" name="Loop">1</param>
+                                            <param id="3" name="Volume">-28</param>
+                                            <param id="1" name="Tag (optional)">&quot;theme&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="991395483640859">
+                                    <conditions>
+                                        <condition id="1" name="Compare parameter" sid="951787170031623" type="Function">
+                                            <param id="0" name="Index">0</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;dark&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="441381344553508" type="Audio">
+                                            <param id="0" name="Audio file">bass-background-ambient</param>
+                                            <param id="2" name="Loop">1</param>
+                                            <param id="3" name="Volume">-20</param>
+                                            <param id="1" name="Tag (optional)">&quot;theme&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
-                        <event-block sid="991395483640859">
+                        <event-block sid="813340008360269">
                             <conditions>
-                                <condition id="1" name="Compare parameter" sid="951787170031623" type="Function">
+                                <condition id="1" name="Compare parameter" sid="345784110873862" type="Function">
                                     <param id="0" name="Index">0</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;dark&quot;</param>
+                                    <param id="2" name="Value">&quot;stop&quot;</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Play" sid="441381344553508" type="Audio">
-                                    <param id="0" name="Audio file">bass-background-ambient</param>
-                                    <param id="2" name="Loop">1</param>
-                                    <param id="3" name="Volume">-20</param>
-                                    <param id="1" name="Tag (optional)">&quot;theme&quot;</param>
+                                <action id="33" name="Stop all" sid="875504628358242" type="Audio" />
+                                <action id="5" name="Set frame" sid="781986913928194" type="finish">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="604492711394222" type="finish">
+                                    <param id="0" name="Opacity">100</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -661,6 +691,19 @@
                     <param id="1" name="Parameter {n}">music_trigger.theme</param>
                 </action>
                 <action id="-9" name="Destroy" sid="361288352544155" type="music_trigger" />
+            </actions>
+        </event-block>
+        <event-block sid="821297115171016">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="466717522138686" type="gulya">
+                    <param id="0" name="Object">quicksave</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="614163416159714" type="quicksave" />
+                <action id="-36" name="Save" sid="419922461072532" type="System">
+                    <param id="0" name="Slot">&quot;mysave&quot;</param>
+                </action>
             </actions>
         </event-block>
     </events>
