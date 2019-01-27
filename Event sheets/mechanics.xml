@@ -669,7 +669,7 @@
                                                                     <param id="0" name="Instance variable">is_opened</param>
                                                                     <param id="1" name="Value">1</param>
                                                                 </action>
-                                                                <action id="1" name="Append text" sid="298361447446709" type="debug_text">
+                                                                <action id="1" name="Append text" sid="298361447446709" type="dynamic_text">
                                                                     <param id="0" name="Text">&quot;event&quot;</param>
                                                                 </action>
                                                             </actions>

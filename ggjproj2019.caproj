@@ -271,8 +271,12 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="debug_text" sid="246611493266270">
+        <object-type name="dynamic_text" sid="246611493266270">
             <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="state" sid="535721142832275" type="number" />
+                <instance-variable name="can_change" sid="932733623046540" type="boolean" />
+            </instance-variables>
         </object-type>
         <object-type name="enemy" sid="900564482945405">
             <plugin id="Sprite" />
@@ -800,17 +804,76 @@
             <plugin id="TiledBg" />
             <texture />
         </object-type>
+        <object-type name="mamma" sid="327677033130206">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="1" name="open_eye" pingpong="0" repeatcount="1" repeatto="0" sid="250163158528399" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Макс\Desktop\JAM\текстура и анимации\маман\MOM1.png">
+                        <collision-poly>
+                            <point x="0.221094" y="0.110547" />
+                            <point x="0.5" y="0.145313" />
+                            <point x="0.8" y="0.1" />
+                            <point x="0.825781" y="0.5" />
+                            <point x="0.917969" y="0.958984" />
+                            <point x="0.5" y="1" />
+                            <point x="0.172656" y="0.913672" />
+                            <point x="0.259375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Макс\Desktop\JAM\текстура и анимации\маман\MOM2.png">
+                        <collision-poly>
+                            <point x="0.221094" y="0.110547" />
+                            <point x="0.5" y="0.145313" />
+                            <point x="0.8" y="0.1" />
+                            <point x="0.825781" y="0.5" />
+                            <point x="0.917969" y="0.958984" />
+                            <point x="0.5" y="1" />
+                            <point x="0.172656" y="0.913672" />
+                            <point x="0.259375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="1" name="close_eye" pingpong="0" repeatcount="1" repeatto="0" sid="168852015062847" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Макс\Desktop\JAM\текстура и анимации\маман\MOM3.png">
+                        <collision-poly>
+                            <point x="0.221094" y="0.110547" />
+                            <point x="0.5" y="0.145313" />
+                            <point x="0.8" y="0.1" />
+                            <point x="0.825781" y="0.5" />
+                            <point x="0.917969" y="0.958984" />
+                            <point x="0.5" y="1" />
+                            <point x="0.172656" y="0.913672" />
+                            <point x="0.259375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Макс\Desktop\JAM\текстура и анимации\маман\MOM4.png">
+                        <collision-poly>
+                            <point x="0.221094" y="0.110547" />
+                            <point x="0.5" y="0.145313" />
+                            <point x="0.8" y="0.1" />
+                            <point x="0.825781" y="0.5" />
+                            <point x="0.917969" y="0.958984" />
+                            <point x="0.5" y="1" />
+                            <point x="0.172656" y="0.913672" />
+                            <point x="0.259375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>tech.xml</layout>
         <layout>LVL1.xml</layout>
+        <layout>animated.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>mechanics.xml</event-sheet>
         <event-sheet>main settings.xml</event-sheet>
         <event-sheet>visual.xml</event-sheet>
         <event-sheet>sounds.xml</event-sheet>
+        <event-sheet>animated.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Function" uid="33" />

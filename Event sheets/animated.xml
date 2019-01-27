@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>animated</name>
+    <events>
+        <event-block sid="262872026842485">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="915256280507813" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="821463964416711" type="dynamic_text">
+                    <param id="0" name="Text">&quot;...&quot;</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="421833625814871" type="mamma">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Изменение текста по тапу и переход на след. уровень</comment>
+        <event-block sid="312756218968569">
+            <conditions>
+                <condition id="14" name="On tap" sid="445050028427261" type="Touch" />
+                <condition id="-8" name="Is boolean instance variable set" sid="560148312896848" type="dynamic_text">
+                    <param id="0" name="Instance variable">can_change</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Add to" sid="781229079241256" type="dynamic_text">
+                    <param id="0" name="Instance variable">state</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="915755974703690" type="dynamic_text">
+                    <param id="0" name="Instance variable">can_change</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <comment>тут начинать менять текст по порядку&#x0D;&#x0A;&lt;---------------------------------------------------------&gt;</comment>
+                <event-block sid="125698570115605">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="217419569001151" type="dynamic_text">
+                            <param id="0" name="Instance variable">state</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="758903275260508" type="dynamic_text">
+                            <param id="0" name="Text">&quot;Привет, сына, как дела?&quot;</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="140307283906949" type="mamma">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                        <action id="6" name="Set speed" sid="852707027299361" type="mamma">
+                            <param id="0" name="Speed">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="882349365381655" type="mamma">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="386728570406605">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="652834708967316" type="dynamic_text">
+                            <param id="0" name="Instance variable">state</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="970721035870574" type="dynamic_text">
+                            <param id="0" name="Text">&quot;Сгоняй ка мне за пивасиком&quot;</param>
+                        </action>
+                        <action id="6" name="Set speed" sid="466956662044589" type="mamma">
+                            <param id="0" name="Speed">7</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="582297557791535" type="mamma">
+                            <param id="0" name="Animation">&quot;open_eye&quot;</param>
+                            <param id="1" name="From">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="434012921264699">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="232125770887606" type="dynamic_text">
+                            <param id="0" name="Instance variable">state</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="428650191658815" type="dynamic_text">
+                            <param id="0" name="Text">&quot;погодка на улице просто блеск&quot;</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="848750574517328" type="mamma">
+                            <param id="0" name="Animation">&quot;close_eye&quot;</param>
+                            <param id="1" name="From">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="175951172247518">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="355145477932842" type="dynamic_text">
+                            <param id="0" name="Instance variable">state</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="663660357972037" type="dynamic_text">
+                            <param id="0" name="Text">&quot;...&quot;</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="823491585423688" type="mamma">
+                            <param id="0" name="Animation">&quot;open_eye&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="6" name="Set speed" sid="912808257644491" type="mamma">
+                            <param id="0" name="Speed">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="218764815185815" type="mamma">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>&lt;---------------------------------------------------------&gt;&#x0D;&#x0A;Стэйт для перехода на следующий уровень&#x0D;&#x0A;&lt;---------------------------------------------------------&gt;</comment>
+                <event-block sid="920062996636134">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="133326334411769" type="dynamic_text">
+                            <param id="0" name="Instance variable">state</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="818018108042761" type="System">
+                            <param id="0" name="Layout">LVL1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>&lt;---------------------------------------------------------&gt;&#x0D;&#x0A;тут заканчивать менять текст</comment>
+                <event-block sid="636038851855132">
+                    <conditions />
+                    <actions>
+                        <action id="-16" name="Wait" sid="581783147374640" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="141297768858440" type="dynamic_text">
+                            <param id="0" name="Instance variable">can_change</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

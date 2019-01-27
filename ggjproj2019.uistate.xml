@@ -11,10 +11,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="4">LVL1</layout>
+        <layout order="5">animated</layout>
         <event-sheet order="0">main settings</event-sheet>
         <event-sheet order="1">mechanics</event-sheet>
         <event-sheet order="2">visual</event-sheet>
-        <event-sheet active="1" order="3">sounds</event-sheet>
+        <event-sheet order="3">sounds</event-sheet>
+        <event-sheet active="1" order="6">animated</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -50,5 +52,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/effect_batmannn/" />
         <folder expanded="1" path="animation-folder/effect_crot/" />
         <folder expanded="1" path="animation-folder/visual_effects/" />
+        <folder expanded="1" path="animation-folder/mamma/" />
     </folders-expanded>
 </c2uistate>
