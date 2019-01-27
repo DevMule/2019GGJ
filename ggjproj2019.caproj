@@ -223,7 +223,7 @@
                     </frame>
                 </animation>
                 <animation framecount="2" loop="0" name="lvr" pingpong="0" repeatcount="1" repeatto="0" sid="884020502609583" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Макс\Desktop\JAM\текстура и анимации\Рычаг1.png">
                         <collision-poly>
                             <point x="0.18" y="0.304" />
                             <point x="0.776" y="0.296" />
@@ -231,7 +231,7 @@
                             <point x="0" y="1" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Макс\Desktop\JAM\текстура и анимации\Рычаг2.png">
                         <collision-poly>
                             <point x="0.18" y="0.304" />
                             <point x="0.776" y="0.296" />
@@ -1060,6 +1060,22 @@
                     </frame>
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="coin" sid="185263346610352">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="278772603360093">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="926734093912886" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="196337246420897">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />

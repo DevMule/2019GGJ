@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>mechanics</name>
     <events>
+        <variable constant="0" name="coins" sid="431461193313570" static="0" type="number">0</variable>
         <event-group description="" sid="504193942367805" title="trampoline">
             <sub-events>
                 <event-block sid="516343873713779">
@@ -1032,6 +1033,41 @@
                         <action id="-13" name="Set boolean" sid="204707614102077" type="gulya">
                             <param id="0" name="Instance variable">untouchable</param>
                             <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="733779189103115" title="coins">
+            <sub-events>
+                <event-block sid="398222457104285">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="664827213601504" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="241184933759150" type="Text">
+                            <param id="0" name="Text">coins &amp; &quot; coins&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="476906503727066">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="485576937467705" type="gulya">
+                            <param id="0" name="Object">coin</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="200725824337393" type="Function">
+                            <param id="0" name="Name">&quot;DoSingleSound&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;collect&quot;</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="856815126880297" type="coin" />
+                        <action id="-10" name="Add to" sid="746386726535666" type="System">
+                            <param id="0" name="Variable">coins</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="902813965754285" type="Text">
+                            <param id="0" name="Text">coins &amp; &quot; coins&quot;</param>
                         </action>
                     </actions>
                 </event-block>

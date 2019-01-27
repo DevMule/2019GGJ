@@ -98,7 +98,7 @@
                     <behavior-instances>
                         <behavior-instance type="Sine">
                             <properties>
-                                <active-on-start>Yes</active-on-start>
+                                <active-on-start>No</active-on-start>
                                 <movement>Horizontal</movement>
                                 <wave>Sine</wave>
                                 <period>4</period>
@@ -113,10 +113,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>426.5</x>
+                        <x>422.5</x>
                         <y>46.5</y>
                         <z>0</z>
-                        <width>865</width>
+                        <width>1003</width>
                         <height>99</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -135,7 +135,7 @@
                     <behavior-instances>
                         <behavior-instance type="Sine">
                             <properties>
-                                <active-on-start>Yes</active-on-start>
+                                <active-on-start>No</active-on-start>
                                 <movement>Horizontal</movement>
                                 <wave>Sine</wave>
                                 <period>4</period>
@@ -150,10 +150,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>428</x>
+                        <x>424</x>
                         <y>433.5</y>
                         <z>0</z>
-                        <width>865</width>
+                        <width>1003</width>
                         <height>94</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
