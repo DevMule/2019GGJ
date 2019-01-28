@@ -796,7 +796,7 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="21" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="305911119038708" speed="0">
+                <animation framecount="25" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="305911119038708" speed="0">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -1002,6 +1002,54 @@
                             <point x="0.9125" y="0.5" />
                             <point x="0.998438" y="0.996875" />
                             <point x="0.00136719" y="0.997266" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Макс\Desktop\JAM\текстура и анимации\сахар\надпись_0006_Layer7.png">
+                        <collision-poly>
+                            <point x="0.143911" y="0.151855" />
+                            <point x="0.499891" y="0.504581" />
+                            <point x="0.901454" y="0.103985" />
+                            <point x="0.589538" y="0.5" />
+                            <point x="0.731061" y="0.716216" />
+                            <point x="0.499891" y="0.989006" />
+                            <point x="0.251357" y="0.734769" />
+                            <point x="0.489255" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Макс\Desktop\JAM\текстура и анимации\сахар\надпись_0011_Layer1.png">
+                        <collision-poly>
+                            <point x="0.0694502" y="0.0802292" />
+                            <point x="0.5" y="0.0530086" />
+                            <point x="0.871434" y="0.14852" />
+                            <point x="0.999793" y="0.5" />
+                            <point x="0.847664" y="0.824021" />
+                            <point x="0.5" y="0.988777" />
+                            <point x="0.139107" y="0.839303" />
+                            <point x="0.354279" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Макс\Desktop\JAM\текстура и анимации\сахар\надпись_0009_Layer4.png">
+                        <collision-poly>
+                            <point x="0.100786" y="0.0888096" />
+                            <point x="0.499881" y="0.0852404" />
+                            <point x="0.844651" y="0.136889" />
+                            <point x="0.805337" y="0.499895" />
+                            <point x="0.949726" y="0.9557" />
+                            <point x="0.499881" y="0.9979" />
+                            <point x="0.153919" y="0.864371" />
+                            <point x="0.228735" y="0.499895" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Макс\Desktop\JAM\текстура и анимации\сахар\надпись_0000_Layer16.png">
+                        <collision-poly>
+                            <point x="0.169329" y="0.14812" />
+                            <point x="0.499855" y="0.00279472" />
+                            <point x="0.853035" y="0.128557" />
+                            <point x="0.7842" y="0.5" />
+                            <point x="0.962533" y="0.967226" />
+                            <point x="0.499855" y="0.240854" />
+                            <point x="0.623003" y="0.455031" />
+                            <point x="0.0139413" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
